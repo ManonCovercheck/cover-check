@@ -221,34 +221,34 @@ export const AppPreviewSection = () => {
 
             {/* Right Side - Feature Highlights */}
             <div className="space-y-6 lg:order-2">
-              <div className="space-y-6">
-                <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center">
-                    <span className="text-green-600 font-bold text-base">{currency}</span>
+              <div className="space-y-8">
+                <div className="flex items-center gap-5">
+                  <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center">
+                    <span className="text-green-600 font-bold text-lg">{currency}</span>
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-foreground">Stop Overpaying</h4>
-                    <p className="text-base text-muted-foreground">Identify duplicate coverage and save hundreds annually</p>
+                    <h4 className="text-2xl font-bold text-foreground mb-2">Stop Overpaying</h4>
+                    <p className="text-lg text-muted-foreground">Identify duplicate coverage and save hundreds annually</p>
                   </div>
                 </div>
                 
-                <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
-                    <FileText className="h-5 w-5 text-blue-600" />
+                <div className="flex items-center gap-5">
+                  <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center">
+                    <FileText className="h-6 w-6 text-blue-600" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-foreground">Smart Claims</h4>
-                    <p className="text-base text-muted-foreground">Know exactly what's covered before you claim</p>
+                    <h4 className="text-2xl font-bold text-foreground mb-2">Smart Claims</h4>
+                    <p className="text-lg text-muted-foreground">Know exactly what's covered before you claim</p>
                   </div>
                 </div>
                 
-                <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center">
-                    <Gift className="h-5 w-5 text-purple-600" />
+                <div className="flex items-center gap-5">
+                  <div className="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center">
+                    <Gift className="h-6 w-6 text-purple-600" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-foreground">Hidden Perks</h4>
-                    <p className="text-base text-muted-foreground">Unlock benefits you're already paying for</p>
+                    <h4 className="text-2xl font-bold text-foreground mb-2">Hidden Perks</h4>
+                    <p className="text-lg text-muted-foreground">Unlock benefits you're already paying for</p>
                   </div>
                 </div>
               </div>
