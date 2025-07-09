@@ -158,7 +158,7 @@ export const AppPreviewSection = () => {
                 </div>
 
                 {/* Tab Content */}
-                <div className="bg-white min-h-[300px] max-h-[300px] overflow-y-auto">
+                <div className="bg-white min-h-[300px] max-h-[300px] overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
                   {getTabContent()}
                 </div>
               </div>

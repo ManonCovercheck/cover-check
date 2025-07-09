@@ -16,7 +16,12 @@ export const InsuranceCategoriesSection = () => {
   ];
 
   const additionalCategories = [
-    { icon: Shield, name: "Umbrella", color: "text-teal-500" }
+    { icon: Shield, name: "Umbrella", color: "text-teal-500" },
+    { icon: Heart, name: "Dental", color: "text-blue-400" },
+    { icon: Car, name: "Rental Car", color: "text-yellow-500" },
+    { icon: Briefcase, name: "Disability", color: "text-red-400" },
+    { icon: Home, name: "Renters", color: "text-green-400" },
+    { icon: Shield, name: "Liability", color: "text-purple-400" }
   ];
 
   const displayedCategories = showMore ? [...baseCategories, ...additionalCategories] : baseCategories;
