@@ -57,18 +57,18 @@ export const AppPreviewSection = () => {
             <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
               <h4 className="font-semibold text-blue-800 mb-2">📱 Phone Theft Guide</h4>
               <div className="space-y-2 text-sm">
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4 text-green-500" />
-                  <span>Must be stolen from zipped bag</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4 text-green-500" />
-                  <span>Police report within 48h</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <XCircle className="h-4 w-4 text-red-500" />
-                  <span>Not covered if stolen on table at bar</span>
-                </div>
+                 <div className="flex items-center gap-2">
+                   <CheckCircle className="h-5 w-5 text-green-500" />
+                   <span>Must be stolen from zipped bag</span>
+                 </div>
+                 <div className="flex items-center gap-2">
+                   <CheckCircle className="h-5 w-5 text-green-500" />
+                   <span>Police report within 48h</span>
+                 </div>
+                 <div className="flex items-center gap-2">
+                   <XCircle className="h-5 w-5 text-red-500" />
+                   <span>Not covered if stolen on table at bar</span>
+                 </div>
               </div>
             </div>
             <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3">
@@ -96,20 +96,14 @@ export const AppPreviewSection = () => {
                   <div className="flex items-center justify-between">
                     <span className="text-foreground font-medium text-sm">{item.type}</span>
                      <span className={`text-xs px-2 py-1 rounded-full ${
-                        item.color === 'green' ? 'bg-green-100 text-green-700' :
-                        item.color === 'blue' ? 'bg-blue-100 text-blue-700' :
-                        item.color === 'red' ? 'bg-red-100 text-red-700' :
-                        'bg-gray-100 text-gray-700'
+                        item.status === 'Covered' ? 'bg-green-100 text-green-700' :
+                        'bg-red-100 text-red-700'
                       }`}>
                        {item.status}
                      </span>
                   </div>
                 </div>
               ))}
-            </div>
-            <div className="bg-blue-50 border border-blue-200 rounded-lg p-3">
-              <div className="text-sm font-medium text-blue-800">Coverage Score: 7/10</div>
-              <div className="text-xs text-blue-600">Add dental to reach 10/10</div>
             </div>
           </div>
         );

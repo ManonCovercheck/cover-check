@@ -69,9 +69,13 @@ export const PerksSection = () => {
                   </div>
                   
                   <div className="flex-1 text-left">
-                    <div className="flex items-center justify-between mb-2">
-                      <h4 className="font-semibold text-foreground">{perk.title}</h4>
-                      <span className="font-bold text-primary">{perk.value}</span>
+                    <div className="flex items-start justify-between mb-2">
+                      <div className="flex-1">
+                        <h4 className="font-semibold text-foreground">{perk.title}</h4>
+                      </div>
+                      <div className="text-right ml-4">
+                        <span className="font-bold text-primary block">{perk.value}</span>
+                      </div>
                     </div>
                     <p className="text-sm text-muted-foreground mb-1">{perk.description}</p>
                     <p className="text-xs text-primary font-medium">Via {perk.source}</p>
@@ -80,12 +84,6 @@ export const PerksSection = () => {
               ))}
             </div>
 
-            <div className="mt-8">
-              <Button size="lg" className="w-full md:w-auto">
-                <Gift className="mr-2 h-5 w-5" />
-                Activate My Perks
-              </Button>
-            </div>
           </div>
         </div>
       </div>

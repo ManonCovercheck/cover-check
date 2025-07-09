@@ -34,6 +34,7 @@ export const InsuranceCategoriesSection = () => {
     <section className="py-16 bg-muted/5">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
+          <Shield className="h-16 w-16 text-primary mx-auto mb-6" />
           <h3 className="text-2xl font-bold text-foreground mb-4">
             We Analyze All Types of Insurance
           </h3>
