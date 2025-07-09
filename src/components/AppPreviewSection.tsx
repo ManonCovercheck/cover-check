@@ -28,15 +28,6 @@ export const AppPreviewSection = () => {
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            See Your Savings in Action
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Here's what a typical family discovers with CoverCheck - overlapping coverage costing hundreds per year
-          </p>
-        </div>
-
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Smartphone Mockup */}
