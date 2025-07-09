@@ -70,15 +70,16 @@ export const AppPreviewSection = () => {
                 { type: "Phone Insurance", status: "Active", color: "green" },
                 { type: "Travel Protection", status: "Active", color: "green" },
                 { type: "Rental Car", status: "Available", color: "blue" },
-                { type: "Purchase Protection", status: "Unused", color: "gray" }
+                { type: "Dental Protection", status: "Missing", color: "red" }
               ].map((item, index) => (
                 <div key={index} className="flex items-center justify-between p-3 bg-muted/50 rounded-lg">
                   <span className="text-foreground">{item.type}</span>
-                  <span className={`text-sm px-2 py-1 rounded-full ${
-                    item.color === 'green' ? 'bg-green-100 text-green-700' :
-                    item.color === 'blue' ? 'bg-blue-100 text-blue-700' :
-                    'bg-gray-100 text-gray-700'
-                  }`}>
+                   <span className={`text-sm px-2 py-1 rounded-full ${
+                     item.color === 'green' ? 'bg-green-100 text-green-700' :
+                     item.color === 'blue' ? 'bg-blue-100 text-blue-700' :
+                     item.color === 'red' ? 'bg-red-100 text-red-700' :
+                     'bg-gray-100 text-gray-700'
+                   }`}>
                     {item.status}
                   </span>
                 </div>
@@ -114,14 +115,14 @@ export const AppPreviewSection = () => {
   };
 
   return (
-    <section className="py-24 bg-background">
+    <section className="py-16 bg-gradient-to-br from-background via-muted/20 to-background">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           {/* Phone Mockup */}
-          <div className="relative mx-auto w-80 mb-12">
+          <div className="relative mx-auto w-72 mb-12">
             {/* Phone Frame */}
-            <div className="bg-gray-900 rounded-[3rem] p-2 shadow-xl">
-              <div className="bg-black rounded-[2.5rem] overflow-hidden">
+            <div className="bg-gray-900 rounded-[2.5rem] p-2 shadow-phone border border-gray-800 backdrop-blur-sm">
+              <div className="bg-black rounded-[2rem] overflow-hidden h-[600px]">
                 {/* Status Bar */}
                 <div className="bg-black text-white px-6 py-2 flex justify-between items-center text-sm">
                   <span>9:41</span>
@@ -175,7 +176,7 @@ export const AppPreviewSection = () => {
               size="lg"
               className="text-lg px-8 py-4 h-auto"
             >
-              🟢 Start My Free Scan
+              Start Your Free Scan
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>
