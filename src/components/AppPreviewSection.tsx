@@ -1,6 +1,23 @@
 import { DollarSign, TrendingDown, Shield } from "lucide-react";
 
 export const AppPreviewSection = () => {
+  const handleGetActionPlan = () => {
+    window.open('https://tally.so/r/mY4XZq', '_blank');
+  };
+
+  const handleShareWithFamily = () => {
+    if (navigator.share) {
+      navigator.share({
+        title: 'CoverCheck - Insurance Analysis',
+        text: 'Check out CoverCheck for finding insurance savings!',
+        url: window.location.href,
+      });
+    } else {
+      // Fallback for browsers that don't support Web Share API
+      navigator.clipboard.writeText(window.location.href);
+      alert('Link copied to clipboard!');
+    }
+  };
   const savingsData = [
     { category: "Health Insurance", overlap: "Spouse duplicate coverage", savings: "£45/month" },
     { category: "Travel Insurance", overlap: "Credit card benefit", savings: "£120/year" },
@@ -93,10 +110,16 @@ export const AppPreviewSection = () => {
 
                         {/* Action Buttons */}
                         <div className="space-y-3 px-2">
-                          <button className="w-full bg-secondary text-secondary-foreground rounded-xl py-4 font-semibold text-center shadow-sm">
+                          <button 
+                            onClick={handleGetActionPlan}
+                            className="w-full bg-secondary text-secondary-foreground rounded-xl py-4 font-semibold text-center shadow-sm hover:bg-secondary/90 transition-colors"
+                          >
                             Get Full Action Plan - £29/year
                           </button>
-                          <button className="w-full border border-border text-muted-foreground rounded-xl py-3 font-medium text-center">
+                          <button 
+                            onClick={handleShareWithFamily}
+                            className="w-full border border-border text-muted-foreground rounded-xl py-3 font-medium text-center hover:bg-muted/50 transition-colors"
+                          >
                             Share with Family
                           </button>
                         </div>

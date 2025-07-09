@@ -2,6 +2,13 @@
 import { Heart, Plane, Smartphone, PawPrint, Home, Car, Briefcase, CreditCard, Plus } from "lucide-react";
 
 export const InsuranceCategoriesSection = () => {
+  const handleSeeMore = () => {
+    // Scroll to FAQ section or show a modal with more insurance types
+    const faqSection = document.querySelector('#faq-section');
+    if (faqSection) {
+      faqSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   const categories = [
     { icon: Heart, name: "Health", color: "text-red-500" },
     { icon: Plane, name: "Travel", color: "text-blue-500" },
@@ -37,7 +44,10 @@ export const InsuranceCategoriesSection = () => {
         </div>
         
         <div className="text-center mt-6">
-          <button className="text-primary font-medium hover:text-primary/80 transition-colors duration-300">
+          <button 
+            onClick={handleSeeMore}
+            className="text-primary font-medium hover:text-primary/80 transition-colors duration-300"
+          >
             See More
           </button>
         </div>
