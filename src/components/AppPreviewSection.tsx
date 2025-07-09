@@ -148,7 +148,7 @@ export const AppPreviewSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             {/* Left Side - Text Content */}
-            <div className="space-y-6">
+            <div className="space-y-6 lg:order-1">
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
                   See Everything in One App
@@ -192,7 +192,7 @@ export const AppPreviewSection = () => {
             </div>
 
             {/* Right Side - Phone Mockup */}
-            <div className="relative mx-auto w-72">
+            <div className="relative mx-auto w-72 lg:order-2">
               {/* Phone Frame */}
               <div className="bg-gray-900 rounded-[2.5rem] p-2 shadow-phone border border-gray-800 backdrop-blur-sm">
                 <div className="bg-black rounded-[2rem] overflow-hidden h-[650px]">
