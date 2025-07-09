@@ -1,11 +1,10 @@
 import { HeroSection } from "@/components/HeroSection";
 import { WhatYouGetSection } from "@/components/WhatYouGetSection";
-import { RealLifeExampleSection } from "@/components/RealLifeExampleSection";
+import { OverlappingSection } from "@/components/OverlappingSection";
+import { SmartClaimSection } from "@/components/SmartClaimSection";
+import { CoverSection } from "@/components/CoverSection";
+import { PerksSection } from "@/components/PerksSection";
 import { AppPreviewSection } from "@/components/AppPreviewSection";
-import { HowItWorksSection } from "@/components/HowItWorksSection";
-import { WhyItMattersSection } from "@/components/WhyItMattersSection";
-import { InsuranceCategoriesSection } from "@/components/InsuranceCategoriesSection";
-import { FAQSection } from "@/components/FAQSection";
 import { FooterSection } from "@/components/FooterSection";
 
 const Index = () => {
@@ -13,7 +12,10 @@ const Index = () => {
     <div className="min-h-screen">
       <HeroSection />
       <WhatYouGetSection />
-      <RealLifeExampleSection />
+      <OverlappingSection />
+      <SmartClaimSection />
+      <CoverSection />
+      <PerksSection />
       <AppPreviewSection />
       <FooterSection />
     </div>
