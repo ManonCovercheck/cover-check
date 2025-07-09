@@ -54,7 +54,7 @@ export const HeroSection = () => {
             {[
               "Free coverage analysis",
               "Identify potential savings", 
-              "Detailed plan for £29/year"
+              "Detailed action plan"
             ].map((benefit, index) => (
               <div key={index} className="flex items-center gap-2 bg-background/10 backdrop-blur-sm rounded-lg px-4 py-2">
                 <CheckCircle className="h-5 w-5 text-secondary" />
@@ -78,7 +78,7 @@ export const HeroSection = () => {
 
           {/* Trust Indicators */}
           <p className="text-primary-foreground/70 text-sm mt-4">
-            Free analysis • Results in 3 minutes • Detailed plan £29/year
+            Free analysis • Results in 3 minutes • Detailed action plan
           </p>
         </div>
       </div>
