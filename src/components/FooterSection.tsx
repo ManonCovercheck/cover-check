@@ -93,7 +93,7 @@ export const FooterSection = () => {
             </p>
             <div className="flex items-center gap-2 text-primary-foreground/60 text-sm">
               <MapPin className="h-4 w-4" />
-              <span>Made with ❤️ in San Francisco</span>
+              <span>Made with ❤️ in London</span>
             </div>
           </div>
         </div>
