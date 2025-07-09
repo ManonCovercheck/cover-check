@@ -57,8 +57,9 @@ export const InsuranceCategoriesSection = () => {
         <div className="text-center mt-6">
           <button 
             onClick={handleSeeMore}
-            className="text-primary font-medium hover:text-primary/80 transition-colors duration-300"
+            className="text-primary font-medium hover:text-primary/80 transition-colors duration-300 flex items-center justify-center gap-2 mx-auto"
           >
+            <Shield className="h-5 w-5 text-primary" />
             {showMore ? "See Less" : "See More"}
           </button>
         </div>

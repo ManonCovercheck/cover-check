@@ -58,15 +58,15 @@ export const AppPreviewSection = () => {
               <h4 className="font-semibold text-blue-800 mb-2">📱 Phone Theft Guide</h4>
               <div className="space-y-2 text-sm">
                  <div className="flex items-center gap-2">
-                   <CheckCircle className="h-5 w-5 text-green-500" />
+                   <CheckCircle className="h-4 w-4 text-green-500" />
                    <span>Must be stolen from zipped bag</span>
                  </div>
                  <div className="flex items-center gap-2">
-                   <CheckCircle className="h-5 w-5 text-green-500" />
+                   <CheckCircle className="h-4 w-4 text-green-500" />
                    <span>Police report within 48h</span>
                  </div>
                  <div className="flex items-center gap-2">
-                   <XCircle className="h-5 w-5 text-red-500" />
+                   <XCircle className="h-4 w-4 text-red-500" />
                    <span>Not covered if stolen on table at bar</span>
                  </div>
               </div>
