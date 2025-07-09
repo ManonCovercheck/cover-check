@@ -127,9 +127,9 @@ export const AppPreviewSection = () => {
             </div>
 
             {/* Text Content */}
-            <div className="order-1 lg:order-2 text-center lg:text-left">
+            <div className="order-1 lg:order-2">
               <div className="space-y-6">
-                <div>
+                <div className="text-center lg:text-left">
                   <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
                     See Your Savings in Real-Time
                   </h3>
