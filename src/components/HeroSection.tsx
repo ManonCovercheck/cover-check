@@ -38,7 +38,7 @@ export const HeroSection = () => {
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Get a free analysis of your insurance policies and discover potential savings. Detailed insights and action plan available for £29/year.
+            Get a free analysis of your insurance policies and discover potential savings.
           </p>
 
           {/* Key Benefits */}
