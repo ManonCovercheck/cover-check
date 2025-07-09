@@ -18,7 +18,7 @@ const translations = {
     'hero.subtitle': 'CoverCheck scans your insurance coverage to help you stop overpaying, unlock unused perks, and file smarter claims — all in one place.',
     'hero.benefit1': 'Free coverage analysis',
     'hero.benefit2': 'Identify potential savings',
-    'hero.benefit3': 'Detailed plan for £29/year',
+    'hero.benefit3': 'Detailed action plan',
     'hero.cta': 'Start Your Free Scan',
     'hero.trust': 'Free analysis • Results in 3 minutes • Detailed plan £29/year',
     
@@ -138,7 +138,7 @@ const translations = {
     'hero.subtitle': 'CoverCheck analyse votre couverture d\'assurance pour vous aider à arrêter de trop payer, débloquer des avantages inutilisés, et déposer des réclamations plus intelligentes — tout en un seul endroit.',
     'hero.benefit1': 'Analyse gratuite de couverture',
     'hero.benefit2': 'Identifier les économies potentielles',
-    'hero.benefit3': 'Plan détaillé pour €29/an',
+    'hero.benefit3': 'Plan d\'action détaillé',
     'hero.cta': 'Commencer Votre Scan Gratuit',
     'hero.trust': 'Analyse gratuite • Résultats en 3 minutes • Plan détaillé €29/an',
     
