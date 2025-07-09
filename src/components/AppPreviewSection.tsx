@@ -52,7 +52,7 @@ export const AppPreviewSection = () => {
                     </div>
                     
                     {/* Screen Content */}
-                    <div className="bg-background rounded-[1.8rem] overflow-hidden h-[500px]">
+                    <div className="bg-background rounded-[1.8rem] overflow-hidden h-[500px] flex flex-col">
                       {/* Status Bar */}
                       <div className="flex justify-between items-center px-5 py-2 bg-background text-xs">
                         <span className="font-medium text-foreground">9:41</span>
@@ -63,8 +63,8 @@ export const AppPreviewSection = () => {
                         </div>
                       </div>
 
-                      {/* App Content */}
-                      <div className="px-4 pb-4 flex flex-col h-full">
+                      {/* App Content - Scrollable */}
+                      <div className="px-4 pb-4 flex-1 overflow-y-auto scrollbar-hide">
                         {/* App Header */}
                         <div className="flex items-center justify-between mb-5 px-2">
                           <div>
@@ -90,9 +90,9 @@ export const AppPreviewSection = () => {
                         </div>
 
                         {/* Policy Breakdown */}
-                        <div className="space-y-3 mb-5 flex-1">
+                        <div className="space-y-3 mb-5">
                           <h4 className="font-semibold text-foreground px-2">Coverage Overlaps</h4>
-                          {savingsData.slice(0, 2).map((item, index) => (
+                          {savingsData.map((item, index) => (
                             <div key={index} className="bg-card rounded-xl p-3 border border-border/50 shadow-sm">
                               <div className="flex items-center justify-between">
                                 <div className="flex-1">
@@ -101,21 +101,26 @@ export const AppPreviewSection = () => {
                                 </div>
                                 <div className="text-right bg-secondary/10 rounded-lg px-3 py-1.5">
                                   <div className="font-bold text-secondary">{item.savings}</div>
-                                  <div className="text-xs text-muted-foreground">saved</div>
+                                  <div className="text-xs text-muted-foreground">potential saving</div>
                                 </div>
                               </div>
                             </div>
                           ))}
-                          <div className="text-center text-sm text-muted-foreground">+2 more overlaps found</div>
                         </div>
 
                         {/* Action Buttons */}
-                        <div className="space-y-3 px-2 mt-auto">
+                        <div className="space-y-3 px-2 mt-5">
                           <button 
                             onClick={handleGetActionPlan}
                             className="w-full bg-secondary text-secondary-foreground rounded-xl py-3 font-semibold text-center shadow-sm hover:bg-secondary/90 transition-colors"
                           >
                             Get Full Plan - £29/year
+                          </button>
+                          <button 
+                            onClick={handleShareWithFamily}
+                            className="w-full border border-border text-muted-foreground rounded-xl py-2.5 font-medium text-center hover:bg-muted/50 transition-colors"
+                          >
+                            Share Analysis
                           </button>
                         </div>
                       </div>
