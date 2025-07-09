@@ -6,7 +6,7 @@ export const WhyItMattersSection = () => {
     {
       icon: DollarSign,
       title: "Potential Savings",
-      description: "Many families unknowingly pay for overlapping insurance coverage across different policies",
+      description: "Many people unknowingly pay for overlapping insurance coverage across different policies",
       stat: "Up to",
       statLabel: "thousands per year"
     },
@@ -20,7 +20,7 @@ export const WhyItMattersSection = () => {
     {
       icon: Heart,
       title: "Peace of Mind",
-      description: "Sleep better knowing your family is properly protected without overpaying",
+      description: "Sleep better knowing you're properly protected without overpaying",
       stat: "Clear",
       statLabel: "recommendations"
     }
@@ -43,7 +43,7 @@ export const WhyItMattersSection = () => {
             Why This Matters Now
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Most families unknowingly pay for overlapping insurance coverage. CoverCheck finds these hidden costs and puts money back in your pocket.
+            Most people unknowingly pay for overlapping insurance coverage. CoverCheck finds these hidden costs and puts money back in your pocket.
           </p>
         </div>
 
