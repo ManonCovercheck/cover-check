@@ -56,15 +56,17 @@ export const HeroSection = () => {
           </div>
 
           {/* CTA Button */}
-          <Button
-            onClick={handleStartScan}
-            variant="hero"
-            size="lg"
-            className="text-lg px-8 py-4 h-auto"
-          >
-            Get Your Free Insurance Analysis
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+          <div className="flex justify-center">
+            <Button
+              onClick={handleStartScan}
+              variant="hero"
+              size="lg"
+              className="text-lg px-8 py-4 h-auto"
+            >
+              Get Your Free Insurance Analysis
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </div>
 
           {/* Trust Indicators */}
           <p className="text-primary-foreground/70 text-sm mt-4">
