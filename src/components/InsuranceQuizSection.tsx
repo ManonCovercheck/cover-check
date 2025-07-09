@@ -77,20 +77,20 @@ export const InsuranceQuizSection = () => {
                         : 'border-border hover:border-primary/30'
                     }`}
                     onClick={() => handleInsuranceToggle(insurance.id)}
-                  >
-                    <div className="text-center">
-                      <div className={`w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-3 ${
-                        selectedInsurance.includes(insurance.id)
-                          ? 'bg-primary text-primary-foreground'
-                          : 'bg-muted text-muted-foreground'
-                      }`}>
-                        <insurance.icon className="h-6 w-6" />
-                      </div>
-                      <h3 className="font-medium text-sm text-foreground">{insurance.name}</h3>
-                      {selectedInsurance.includes(insurance.id) && (
-                        <CheckCircle className="h-5 w-5 text-primary mx-auto mt-2" />
-                      )}
-                    </div>
+                   >
+                     <div className="text-center">
+                       <div className={`w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-3 ${
+                         selectedInsurance.includes(insurance.id)
+                           ? 'bg-primary text-primary-foreground'
+                           : 'bg-muted text-muted-foreground'
+                       }`}>
+                         <Shield className="h-6 w-6 text-primary" />
+                       </div>
+                       <h3 className="font-medium text-sm text-foreground">{insurance.name}</h3>
+                       {selectedInsurance.includes(insurance.id) && (
+                         <CheckCircle className="h-5 w-5 text-primary mx-auto mt-2" />
+                       )}
+                     </div>
                   </Card>
                 ))}
               </div>
