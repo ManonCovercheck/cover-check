@@ -1,5 +1,5 @@
 
-import { Heart, Plane, Smartphone, PawPrint, Home, Car, Shield, Briefcase, CreditCard } from "lucide-react";
+import { Heart, Plane, Smartphone, PawPrint, Home, Car, Briefcase, CreditCard, Plus } from "lucide-react";
 
 export const InsuranceCategoriesSection = () => {
   const categories = [
@@ -10,8 +10,7 @@ export const InsuranceCategoriesSection = () => {
     { icon: Home, name: "Home", color: "text-green-500" },
     { icon: Car, name: "Auto", color: "text-indigo-500" },
     { icon: CreditCard, name: "Credit Card", color: "text-pink-500" },
-    { icon: Briefcase, name: "Life", color: "text-gray-600" },
-    { icon: Shield, name: "Umbrella", color: "text-teal-500" }
+    { icon: Briefcase, name: "Life", color: "text-gray-600" }
   ];
 
   return (
@@ -35,6 +34,14 @@ export const InsuranceCategoriesSection = () => {
               <span className="text-xs font-medium text-foreground text-center">{category.name}</span>
             </div>
           ))}
+          
+          {/* See More Button */}
+          <div className="flex flex-col items-center group p-4 cursor-pointer">
+            <div className="w-14 h-14 bg-gradient-primary rounded-xl flex items-center justify-center mb-3 group-hover:shadow-glow transition-all duration-300">
+              <Plus className="h-6 w-6 text-primary-foreground group-hover:scale-110 transition-transform duration-300" />
+            </div>
+            <span className="text-xs font-medium text-primary text-center">See More</span>
+          </div>
         </div>
       </div>
     </section>
