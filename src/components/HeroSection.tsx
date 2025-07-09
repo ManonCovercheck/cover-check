@@ -2,8 +2,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, CheckCircle } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
 export const HeroSection = () => {
+  const { t } = useLanguage();
   const handleStartScan = () => {
     window.open("https://tally.so/r/mY4XZq", "_blank");
   };
@@ -21,11 +24,16 @@ export const HeroSection = () => {
       />
       
       <div className="container mx-auto px-6 relative z-10">
+        {/* Language Switcher */}
+        <div className="absolute top-6 right-6">
+          <LanguageSwitcher />
+        </div>
+        
         <div className="max-w-4xl mx-auto text-center">
           {/* Trust Badge */}
           <div className="inline-flex items-center gap-2 bg-background/90 backdrop-blur-sm rounded-full px-4 py-2 mb-8 shadow-soft">
             <Shield className="h-4 w-4 text-secondary" />
-            <span className="text-sm font-medium text-foreground">Smart Insurance Analysis</span>
+            <span className="text-sm font-medium text-foreground">{t('hero.badge')}</span>
           </div>
 
           {/* Main Headline */}
