@@ -43,16 +43,16 @@ export const AppPreviewSection = () => {
             <div className="order-2 lg:order-1 flex justify-center">
               <div className="relative w-72 max-w-sm mx-auto">
                 {/* iPhone Frame */}
-                <div className="relative bg-gray-900 rounded-[3rem] p-4 shadow-2xl">
+                <div className="relative bg-gray-900 rounded-[2.5rem] p-2 shadow-2xl">
                   {/* Screen Bezel */}
-                  <div className="bg-black rounded-[2.5rem] p-2">
+                  <div className="bg-black rounded-[2rem] p-1">
                     {/* Notch */}
-                    <div className="bg-black h-6 w-28 rounded-b-2xl mx-auto mb-2 relative">
-                      <div className="absolute top-1 left-1/2 transform -translate-x-1/2 w-14 h-1 bg-gray-800 rounded-full"></div>
+                    <div className="bg-black h-5 w-24 rounded-b-xl mx-auto mb-1 relative">
+                      <div className="absolute top-0.5 left-1/2 transform -translate-x-1/2 w-12 h-0.5 bg-gray-800 rounded-full"></div>
                     </div>
                     
                     {/* Screen Content */}
-                    <div className="bg-background rounded-[2rem] overflow-hidden h-[500px]">
+                    <div className="bg-background rounded-[1.8rem] overflow-hidden h-[500px]">
                       {/* Status Bar */}
                       <div className="flex justify-between items-center px-5 py-2 bg-background text-xs">
                         <span className="font-medium text-foreground">9:41</span>
@@ -121,8 +121,8 @@ export const AppPreviewSection = () => {
                       </div>
 
                       {/* Home Indicator */}
-                      <div className="flex justify-center pb-2">
-                        <div className="w-28 h-1 bg-gray-400 rounded-full"></div>
+                      <div className="flex justify-center pb-1">
+                        <div className="w-24 h-0.5 bg-gray-400 rounded-full"></div>
                       </div>
                     </div>
                   </div>
