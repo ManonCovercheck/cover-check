@@ -15,14 +15,22 @@ const Index = () => {
       <HeroSection />
       <div>
         <WhatYouGetSection />
-        <div className="-mt-8">
+        <div className="-mt-16">
           <OverlappingSection />
-          <SmartClaimSection />
-          <CoverSection />
-          <PerksSection />
+          <div className="-mt-8">
+            <SmartClaimSection />
+          </div>
+          <div className="-mt-8">
+            <CoverSection />
+          </div>
+          <div className="-mt-8">
+            <PerksSection />
+          </div>
         </div>
-        <AppPreviewSection />
-        <div className="space-y-2">
+        <div className="-mt-8">
+          <AppPreviewSection />
+        </div>
+        <div className="-mt-8">
           <InsuranceQuizSection />
         </div>
       </div>

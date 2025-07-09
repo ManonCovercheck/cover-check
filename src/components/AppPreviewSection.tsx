@@ -143,57 +143,103 @@ export const AppPreviewSection = () => {
   };
 
   return (
-    <section className="py-16 bg-gradient-to-br from-background via-muted/20 to-background">
+    <section className="py-8 bg-gradient-to-br from-background via-muted/20 to-background">
       <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto">
-          {/* Phone Mockup */}
-          <div className="relative mx-auto w-72 mb-12">
-            {/* Phone Frame */}
-            <div className="bg-gray-900 rounded-[2.5rem] p-2 shadow-phone border border-gray-800 backdrop-blur-sm">
-              <div className="bg-black rounded-[2rem] overflow-hidden h-[650px]">
-                {/* Status Bar */}
-                <div className="bg-black text-white px-6 py-2 flex justify-between items-center text-sm">
-                  <span>9:41</span>
-                  <div className="flex gap-1">
-                    <div className="w-4 h-2 bg-white rounded-sm"></div>
-                    <div className="w-6 h-2 bg-white rounded-sm"></div>
+        <div className="max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            {/* Left Side - Text Content */}
+            <div className="space-y-6">
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                  See Everything in One App
+                </h2>
+                <p className="text-lg text-muted-foreground mb-6">
+                  Get instant insights into your insurance coverage, identify overlaps, discover hidden perks, and make smarter claims with our comprehensive coverage dashboard.
+                </p>
+              </div>
+              
+              <div className="space-y-4">
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center">
+                    <span className="text-green-600 font-bold text-sm">{currency}</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">Stop Overpaying</h4>
+                    <p className="text-sm text-muted-foreground">Identify duplicate coverage and save hundreds annually</p>
                   </div>
                 </div>
-
-                {/* App Header */}
-                <div className="bg-gradient-primary text-primary-foreground p-4">
-                  <h3 className="text-lg font-semibold">CoverCheck</h3>
-                  <p className="text-primary-foreground/80 text-sm">Your Coverage Report</p>
-                </div>
-
-                {/* Tab Navigation */}
-                <div className="bg-white border-b">
-                  <div className="grid grid-cols-4">
-                    {tabs.map((tab) => (
-                      <button
-                        key={tab.id}
-                        onClick={() => setActiveTab(tab.id)}
-                        className={`p-2 text-[10px] font-medium transition-colors ${
-                          activeTab === tab.id
-                            ? 'text-primary border-b-2 border-primary bg-primary/5'
-                            : 'text-muted-foreground hover:text-foreground'
-                        }`}
-                      >
-                        {tab.iconType === "currency" ? (
-                          <span className="text-xs font-bold text-primary">{currency}</span>
-                        ) : (
-                          <tab.icon className="h-3 w-3 mx-auto mb-1" />
-                        )}
-                        <div className="truncate">{tab.label}</div>
-                      </button>
-                    ))}
+                
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
+                    <FileText className="h-4 w-4 text-blue-600" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">Smart Claims</h4>
+                    <p className="text-sm text-muted-foreground">Know exactly what's covered before you claim</p>
                   </div>
                 </div>
+                
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center">
+                    <Gift className="h-4 w-4 text-purple-600" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">Hidden Perks</h4>
+                    <p className="text-sm text-muted-foreground">Unlock benefits you're already paying for</p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-                {/* Tab Content */}
-                <div className="bg-white h-[380px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
-                  <div className="min-h-[400px]">
-                    {getTabContent()}
+            {/* Right Side - Phone Mockup */}
+            <div className="relative mx-auto w-72">
+              {/* Phone Frame */}
+              <div className="bg-gray-900 rounded-[2.5rem] p-2 shadow-phone border border-gray-800 backdrop-blur-sm">
+                <div className="bg-black rounded-[2rem] overflow-hidden h-[650px]">
+                  {/* Status Bar */}
+                  <div className="bg-black text-white px-6 py-2 flex justify-between items-center text-sm">
+                    <span>9:41</span>
+                    <div className="flex gap-1">
+                      <div className="w-4 h-2 bg-white rounded-sm"></div>
+                      <div className="w-6 h-2 bg-white rounded-sm"></div>
+                    </div>
+                  </div>
+
+                  {/* App Header */}
+                  <div className="bg-gradient-primary text-primary-foreground p-4">
+                    <h3 className="text-lg font-semibold">CoverCheck</h3>
+                    <p className="text-primary-foreground/80 text-sm">Your Coverage Report</p>
+                  </div>
+
+                  {/* Tab Navigation */}
+                  <div className="bg-white border-b">
+                    <div className="grid grid-cols-4">
+                      {tabs.map((tab) => (
+                        <button
+                          key={tab.id}
+                          onClick={() => setActiveTab(tab.id)}
+                          className={`p-2 text-[10px] font-medium transition-colors ${
+                            activeTab === tab.id
+                              ? 'text-primary border-b-2 border-primary bg-primary/5'
+                              : 'text-muted-foreground hover:text-foreground'
+                          }`}
+                        >
+                          {tab.iconType === "currency" ? (
+                            <span className="text-xs font-bold text-primary">{currency}</span>
+                          ) : (
+                            <tab.icon className="h-3 w-3 mx-auto mb-1" />
+                          )}
+                          <div className="truncate">{tab.label}</div>
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Tab Content */}
+                  <div className="bg-white h-[380px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
+                    <div className="min-h-[400px]">
+                      {getTabContent()}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -201,7 +247,7 @@ export const AppPreviewSection = () => {
           </div>
 
           {/* CTA */}
-          <div className="text-center mt-12">
+          <div className="text-center mt-8">
             <Button
               onClick={handleStartScan}
               variant="default"
