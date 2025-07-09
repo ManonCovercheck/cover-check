@@ -20,7 +20,7 @@ const translations = {
     'hero.benefit2': 'Identify potential savings',
     'hero.benefit3': 'Detailed action plan',
     'hero.cta': 'Start Your Free Scan',
-    'hero.trust': 'Free analysis • Results in 3 minutes • Detailed plan £29/year',
+    'hero.trust': 'Free analysis • Results in 3 minutes • Detailed action plan',
     
     // What You Get
     'whatyouget.title': 'What You Get',
@@ -140,7 +140,7 @@ const translations = {
     'hero.benefit2': 'Identifier les économies potentielles',
     'hero.benefit3': 'Plan d\'action détaillé',
     'hero.cta': 'Commencer Votre Scan Gratuit',
-    'hero.trust': 'Analyse gratuite • Résultats en 3 minutes • Plan détaillé €29/an',
+    'hero.trust': 'Analyse gratuite • Résultats en 3 minutes • Plan d\'action détaillé',
     
     // What You Get
     'whatyouget.title': 'Ce Que Vous Obtenez',
