@@ -4,7 +4,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 export const OverlappingSection = () => {
   const { currency } = useLanguage();
   return (
-    <section className="py-24 bg-muted/30">
+    <section className="py-8">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
