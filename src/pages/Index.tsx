@@ -13,9 +13,9 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <HeroSection />
-      <div className="space-y-2">
+      <div>
         <WhatYouGetSection />
-        <div className="space-y-2">
+        <div className="-mt-8">
           <OverlappingSection />
           <SmartClaimSection />
           <CoverSection />
