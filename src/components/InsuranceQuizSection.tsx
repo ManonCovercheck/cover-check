@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Heart, Plane, Smartphone, PawPrint, Home, Car, Briefcase, CreditCard, Shield, CheckCircle, ArrowRight, DollarSign, Gift, AlertTriangle } from "lucide-react";
+import { Heart, Plane, Smartphone, PawPrint, Home, Car, Briefcase, CreditCard, Shield, CheckCircle, ArrowRight, DollarSign, Gift, AlertTriangle, Umbrella } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 export const InsuranceQuizSection = () => {
@@ -10,14 +10,20 @@ export const InsuranceQuizSection = () => {
   const [showResults, setShowResults] = useState(false);
 
   const insuranceTypes = [
-    { id: "health", name: "Health Insurance", icon: Heart, savings: 45, perks: 2, color: "text-red-500" },
-    { id: "travel", name: "Travel Insurance", icon: Plane, savings: 120, perks: 3, color: "text-blue-500" },
-    { id: "phone", name: "Phone Insurance", icon: Smartphone, savings: 80, perks: 1, color: "text-purple-500" },
-    { id: "pet", name: "Pet Insurance", icon: PawPrint, savings: 60, perks: 1, color: "text-orange-500" },
-    { id: "home", name: "Home Insurance", icon: Home, savings: 200, perks: 4, color: "text-green-500" },
-    { id: "auto", name: "Auto Insurance", icon: Car, savings: 150, perks: 3, color: "text-blue-600" },
-    { id: "life", name: "Life Insurance", icon: Briefcase, savings: 90, perks: 2, color: "text-gray-600" },
-    { id: "credit", name: "Credit Card Protection", icon: CreditCard, savings: 180, perks: 5, color: "text-pink-500" }
+    { id: "health", name: "Health", icon: Heart, savings: 45, perks: 2, color: "text-red-500" },
+    { id: "travel", name: "Travel", icon: Plane, savings: 120, perks: 3, color: "text-blue-500" },
+    { id: "phone", name: "Phone", icon: Smartphone, savings: 80, perks: 1, color: "text-purple-500" },
+    { id: "pet", name: "Pet", icon: PawPrint, savings: 60, perks: 1, color: "text-orange-500" },
+    { id: "home", name: "Home", icon: Home, savings: 200, perks: 4, color: "text-green-500" },
+    { id: "auto", name: "Auto", icon: Car, savings: 150, perks: 3, color: "text-blue-600" },
+    { id: "credit", name: "Credit Card", icon: CreditCard, savings: 180, perks: 5, color: "text-pink-500" },
+    { id: "life", name: "Life", icon: Briefcase, savings: 90, perks: 2, color: "text-gray-600" },
+    { id: "umbrella", name: "Umbrella", icon: Umbrella, savings: 75, perks: 2, color: "text-teal-500" },
+    { id: "dental", name: "Dental", icon: Heart, savings: 65, perks: 1, color: "text-blue-400" },
+    { id: "rental", name: "Rental Car", icon: Car, savings: 95, perks: 2, color: "text-yellow-500" },
+    { id: "disability", name: "Disability", icon: Briefcase, savings: 110, perks: 3, color: "text-pink-400" },
+    { id: "renters", name: "Renters", icon: Home, savings: 85, perks: 2, color: "text-green-400" },
+    { id: "liability", name: "Liability", icon: Shield, savings: 70, perks: 1, color: "text-purple-600" }
   ];
 
   const handleInsuranceToggle = (insuranceId: string) => {
