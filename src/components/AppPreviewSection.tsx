@@ -5,7 +5,7 @@ export const AppPreviewSection = () => {
     window.open('https://tally.so/r/mY4XZq', '_blank');
   };
 
-  const handleShareWithFamily = () => {
+  const handleShareAnalysis = () => {
     if (navigator.share) {
       navigator.share({
         title: 'CoverCheck - Insurance Analysis',
@@ -108,7 +108,7 @@ export const AppPreviewSection = () => {
                             Get Full Plan - £29/year
                           </button>
                           <button 
-                            onClick={handleShareWithFamily}
+                            onClick={handleShareAnalysis}
                             className="w-full border border-border text-muted-foreground rounded-xl py-2.5 font-medium text-center hover:bg-muted/50 transition-colors"
                           >
                             Share Analysis
