@@ -55,7 +55,7 @@ export const InsuranceQuizSection = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              🧮 Quick Insurance Calculator
+              🧮 Quick Saving and Perk Calculators
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Select the insurance types you currently have, and we'll estimate your potential savings and hidden perks.
@@ -155,11 +155,11 @@ export const InsuranceQuizSection = () => {
                     size="lg"
                     className="text-lg px-8 py-4 h-auto"
                   >
-                    🟢 Get My Detailed Analysis
+                    🟢 Start My Free Scan
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                   <p className="text-muted-foreground text-sm mt-3">
-                    Free analysis • Results in 3 minutes • No spam
+                    29£/year for overlap report and action plan • 49£/year for overlap + smart claim, perks and cover visibility
                   </p>
                 </div>
               </Card>

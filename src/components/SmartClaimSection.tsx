@@ -22,7 +22,7 @@ export const SmartClaimSection = () => {
                 <h3 className="text-2xl font-bold text-foreground mb-6">
                   📱 Phone Theft Claims Made Simple
                 </h3>
-                <div className="space-y-4 text-left">
+                  <div className="space-y-4 text-left">
                   <div className="flex items-start gap-3">
                     <CheckCircle className="h-6 w-6 text-green-500 mt-0.5 flex-shrink-0" />
                     <div>
@@ -40,8 +40,8 @@ export const SmartClaimSection = () => {
                   <div className="flex items-start gap-3">
                     <XCircle className="h-6 w-6 text-red-500 mt-0.5 flex-shrink-0" />
                     <div>
-                      <div className="font-medium text-foreground">Not covered if left unattended</div>
-                      <div className="text-sm text-muted-foreground">At bars, tables, beaches</div>
+                      <div className="font-medium text-foreground">Not covered if stolen on table at bar</div>
+                      <div className="text-sm text-muted-foreground">Or left unattended in public spaces</div>
                     </div>
                   </div>
                 </div>
@@ -60,7 +60,7 @@ export const SmartClaimSection = () => {
                 </div>
                 <Button className="w-full" size="lg">
                   <FileText className="mr-2 h-5 w-5" />
-                  Get My Claim Guide
+                  Start My Free Scan
                 </Button>
               </div>
             </div>

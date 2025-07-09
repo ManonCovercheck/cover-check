@@ -2,10 +2,10 @@ import { Shield, CheckCircle, Clock, AlertTriangle } from "lucide-react";
 
 export const CoverSection = () => {
   const coverageItems = [
-    { type: "Phone Insurance", status: "Active", provider: "Orange SPB", color: "green", icon: CheckCircle },
-    { type: "Travel Protection", status: "Active", provider: "Credit Card", color: "green", icon: CheckCircle },
-    { type: "Rental Car Coverage", status: "Available", provider: "Employer", color: "blue", icon: Clock },
-    { type: "Purchase Protection", status: "Unused", provider: "Multiple", color: "gray", icon: AlertTriangle }
+    { type: "Phone Insurance", status: "Covered", provider: "Orange SPB", color: "green", icon: CheckCircle },
+    { type: "Travel Protection", status: "Covered", provider: "Credit Card", color: "green", icon: CheckCircle },
+    { type: "Rental Car Coverage", status: "Covered", provider: "Employer", color: "blue", icon: Clock },
+    { type: "Purchase Protection", status: "Missing", provider: "Multiple", color: "gray", icon: AlertTriangle }
   ];
 
   return (

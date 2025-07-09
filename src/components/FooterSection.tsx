@@ -33,12 +33,12 @@ export const FooterSection = () => {
             size="lg"
             className="text-lg px-8 py-4 h-auto mb-6"
           >
-            🟢 Get My Free Report
+            🟢 Start My Free Scan
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
           
           <p className="text-primary-foreground/70 text-sm">
-            Free analysis • Results in 3 minutes • Detailed plan £29/year
+            29£/year for overlap report and action plan • 49£/year for overlap + smart claim, perks and cover visibility
           </p>
         </div>
       </div>
