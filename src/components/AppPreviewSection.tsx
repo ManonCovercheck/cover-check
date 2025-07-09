@@ -11,10 +11,10 @@ export const AppPreviewSection = () => {
   };
 
   const tabs = [
-    { id: "overlapping", label: "Overlap", icon: DollarSign },
-    { id: "smart-claim", label: "Claims", icon: FileText },
-    { id: "cover", label: "Cover", icon: Shield },
-    { id: "perks", label: "Perks", icon: Gift }
+    { id: "overlapping", label: "Overlap", iconType: "currency" as const },
+    { id: "smart-claim", label: "Claims", iconType: "component" as const, icon: FileText },
+    { id: "cover", label: "Cover", iconType: "component" as const, icon: Shield },
+    { id: "perks", label: "Perks", iconType: "component" as const, icon: Gift }
   ];
 
   const getTabContent = () => {
@@ -40,6 +40,14 @@ export const AppPreviewSection = () => {
                 <span className="text-foreground">Phone Protection</span>
                 <span className="bg-orange-500 text-white text-xs px-2 py-1 rounded-full">x2</span>
               </div>
+              <div className="flex items-center justify-between p-3 bg-blue-50 rounded-lg">
+                <span className="text-foreground">Health Insurance</span>
+                <span className="bg-yellow-500 text-white text-xs px-2 py-1 rounded-full">x3</span>
+              </div>
+            </div>
+            <div className="bg-green-50 border border-green-200 rounded-lg p-3">
+              <div className="text-sm font-medium text-green-800">Quick Fix</div>
+              <div className="text-xs text-green-600">Cancel 2 policies to save {currency}327/year</div>
             </div>
           </div>
         );
@@ -57,7 +65,15 @@ export const AppPreviewSection = () => {
                   <CheckCircle className="h-4 w-4 text-green-500" />
                   <span>Police report within 48h</span>
                 </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-green-500" />
+                  <span>Photos of damage required</span>
+                </div>
               </div>
+            </div>
+            <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3">
+              <div className="text-sm font-medium text-yellow-800">💡 Pro Tip</div>
+              <div className="text-xs text-yellow-600">Take photos before traveling</div>
             </div>
             <Button className="w-full" variant="outline">
               <FileText className="mr-2 h-4 w-4" />
@@ -71,23 +87,30 @@ export const AppPreviewSection = () => {
             <h4 className="font-semibold text-foreground mb-4">Your Coverage</h4>
             <div className="space-y-3">
               {[
-                { type: "Phone Insurance", status: "Active", color: "green" },
-                { type: "Travel Protection", status: "Active", color: "green" },
-                { type: "Rental Car", status: "Available", color: "blue" },
-                { type: "Dental Protection", status: "Missing", color: "red" }
+                { type: "Phone Insurance", status: "Active", color: "green", premium: `${currency}12/mo` },
+                { type: "Travel Protection", status: "Active", color: "green", premium: `${currency}8/mo` },
+                { type: "Rental Car", status: "Available", color: "blue", premium: `${currency}15/mo` },
+                { type: "Dental Protection", status: "Missing", color: "red", premium: `${currency}25/mo` }
               ].map((item, index) => (
-                <div key={index} className="flex items-center justify-between p-3 bg-muted/50 rounded-lg">
-                  <span className="text-foreground">{item.type}</span>
-                   <span className={`text-sm px-2 py-1 rounded-full ${
-                     item.color === 'green' ? 'bg-green-100 text-green-700' :
-                     item.color === 'blue' ? 'bg-blue-100 text-blue-700' :
-                     item.color === 'red' ? 'bg-red-100 text-red-700' :
-                     'bg-gray-100 text-gray-700'
-                   }`}>
-                    {item.status}
-                  </span>
+                <div key={index} className="p-3 bg-muted/50 rounded-lg">
+                  <div className="flex items-center justify-between mb-1">
+                    <span className="text-foreground font-medium text-sm">{item.type}</span>
+                     <span className={`text-xs px-2 py-1 rounded-full ${
+                        item.color === 'green' ? 'bg-green-100 text-green-700' :
+                        item.color === 'blue' ? 'bg-blue-100 text-blue-700' :
+                        item.color === 'red' ? 'bg-red-100 text-red-700' :
+                        'bg-gray-100 text-gray-700'
+                      }`}>
+                       {item.status}
+                     </span>
+                  </div>
+                  <div className="text-xs text-muted-foreground">{item.premium}</div>
                 </div>
               ))}
+            </div>
+            <div className="bg-blue-50 border border-blue-200 rounded-lg p-3">
+              <div className="text-sm font-medium text-blue-800">Coverage Score: 7/10</div>
+              <div className="text-xs text-blue-600">Add dental to reach 10/10</div>
             </div>
           </div>
         );
@@ -103,13 +126,21 @@ export const AppPreviewSection = () => {
             </div>
             <div className="space-y-2">
               <div className="p-3 bg-blue-50 rounded-lg">
-                <div className="font-medium text-blue-800">Free Travel Insurance</div>
-                <div className="text-sm text-blue-600">Via your credit card</div>
+                <div className="font-medium text-blue-800 text-sm">Free Travel Insurance</div>
+                <div className="text-xs text-blue-600">Via your credit card • {currency}200 value</div>
               </div>
               <div className="p-3 bg-purple-50 rounded-lg">
-                <div className="font-medium text-purple-800">Rental Car Coverage</div>
-                <div className="text-sm text-purple-600">Via employer benefits</div>
+                <div className="font-medium text-purple-800 text-sm">Rental Car Coverage</div>
+                <div className="text-xs text-purple-600">Via employer benefits • {currency}180 value</div>
               </div>
+              <div className="p-3 bg-orange-50 rounded-lg">
+                <div className="font-medium text-orange-800 text-sm">Extended Warranty</div>
+                <div className="text-xs text-orange-600">Via Amex card • {currency}300 value</div>
+              </div>
+            </div>
+            <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3">
+              <div className="text-sm font-medium text-yellow-800">🎯 Action Needed</div>
+              <div className="text-xs text-yellow-600">Activate 3 unused benefits</div>
             </div>
           </div>
         );
@@ -155,7 +186,11 @@ export const AppPreviewSection = () => {
                             : 'text-muted-foreground hover:text-foreground'
                         }`}
                       >
-                        <tab.icon className="h-3 w-3 mx-auto mb-1" />
+                        {tab.iconType === "currency" ? (
+                          <span className="text-xs font-bold text-primary">{currency}</span>
+                        ) : (
+                          <tab.icon className="h-3 w-3 mx-auto mb-1" />
+                        )}
                         <div className="truncate">{tab.label}</div>
                       </button>
                     ))}
