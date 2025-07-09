@@ -20,7 +20,7 @@ const Index = () => {
         <div className="bg-muted/50 -mt-8">
           <AppPreviewSection />
         </div>
-        <div className="bg-muted/50 -mt-4 py-1">
+        <div className="bg-muted/50 py-2">
           <div className="container mx-auto px-6">
             <div className="text-center">
               <button
@@ -35,7 +35,7 @@ const Index = () => {
             </div>
           </div>
         </div>
-        <div className="bg-white -mt-3">
+        <div className="bg-white -mt-1">
           <InsuranceQuizSection />
         </div>
         <div className="bg-muted/50 -mt-8">
