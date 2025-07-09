@@ -34,14 +34,12 @@ export const InsuranceCategoriesSection = () => {
               <span className="text-xs font-medium text-foreground text-center">{category.name}</span>
             </div>
           ))}
-          
-          {/* See More Button */}
-          <div className="flex flex-col items-center group p-4 cursor-pointer">
-            <div className="w-14 h-14 bg-gradient-primary rounded-xl flex items-center justify-center mb-3 group-hover:shadow-glow transition-all duration-300">
-              <Plus className="h-6 w-6 text-primary-foreground group-hover:scale-110 transition-transform duration-300" />
-            </div>
-            <span className="text-xs font-medium text-primary text-center">See More</span>
-          </div>
+        </div>
+        
+        <div className="text-center mt-6">
+          <button className="text-primary font-medium hover:text-primary/80 transition-colors duration-300">
+            See More
+          </button>
         </div>
       </div>
     </section>
