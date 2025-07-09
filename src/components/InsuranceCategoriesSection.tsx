@@ -1,4 +1,5 @@
-import { Heart, Plane, Smartphone, PawPrint, Home, Car, Shield, Briefcase } from "lucide-react";
+
+import { Heart, Plane, Smartphone, PawPrint, Home, Car, Shield, Briefcase, CreditCard } from "lucide-react";
 
 export const InsuranceCategoriesSection = () => {
   const categories = [
@@ -8,6 +9,7 @@ export const InsuranceCategoriesSection = () => {
     { icon: PawPrint, name: "Pet", color: "text-orange-500" },
     { icon: Home, name: "Home", color: "text-green-500" },
     { icon: Car, name: "Auto", color: "text-indigo-500" },
+    { icon: CreditCard, name: "Credit Card", color: "text-pink-500" },
     { icon: Briefcase, name: "Life", color: "text-gray-600" },
     { icon: Shield, name: "Umbrella", color: "text-teal-500" }
   ];
@@ -24,7 +26,7 @@ export const InsuranceCategoriesSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-9 gap-6 max-w-6xl mx-auto">
           {categories.map((category, index) => (
             <div key={index} className="flex flex-col items-center group">
               <div className="w-16 h-16 bg-muted rounded-2xl flex items-center justify-center mb-3 group-hover:bg-primary/10 transition-colors duration-300">
