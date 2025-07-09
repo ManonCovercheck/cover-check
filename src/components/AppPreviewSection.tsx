@@ -109,7 +109,7 @@ export const AppPreviewSection = () => {
         );
       case "perks":
         return (
-          <div className="p-6 space-y-4">
+          <div className="p-6 space-y-4 h-full">
             <div className="bg-green-50 border border-green-200 rounded-xl p-4">
               <div className="flex items-center gap-3 mb-2">
                 <Gift className="h-5 w-5 text-green-600" />
@@ -129,6 +129,14 @@ export const AppPreviewSection = () => {
               <div className="p-3 bg-orange-50 rounded-lg">
                 <div className="font-medium text-orange-800 text-sm">Extended Warranty</div>
                 <div className="text-xs text-orange-600">Via Amex card • {currency}300 value</div>
+              </div>
+              <div className="p-3 bg-green-50 rounded-lg">
+                <div className="font-medium text-green-800 text-sm">Purchase Protection</div>
+                <div className="text-xs text-green-600">Via mastercard • {currency}120 value</div>
+              </div>
+              <div className="p-3 bg-yellow-50 rounded-lg">
+                <div className="font-medium text-yellow-800 text-sm">Cashback Rewards</div>
+                <div className="text-xs text-yellow-600">Via reward program • {currency}50 value</div>
               </div>
             </div>
             <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3">
@@ -202,7 +210,7 @@ export const AppPreviewSection = () => {
                   </div>
 
                   {/* Tab Content */}
-                  <div className="bg-white h-[460px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
+                  <div className="bg-white h-[460px] overflow-y-auto overflow-x-hidden scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
                     <div className="min-h-[480px]">
                       {getTabContent()}
                     </div>

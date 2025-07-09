@@ -21,19 +21,19 @@ const Index = () => {
           <AppPreviewSection />
         </div>
         <div className="bg-white -mt-8">
+          <InsuranceQuizSection />
+        </div>
+        <div className="bg-muted/50 -mt-8">
           <OverlappingSection />
         </div>
-        <div className="bg-muted/50 -mt-8">
+        <div className="bg-white -mt-8">
           <SmartClaimSection />
         </div>
-        <div className="bg-white -mt-8">
+        <div className="bg-muted/50 -mt-8">
           <CoverSection />
         </div>
-        <div className="bg-muted/50 -mt-8">
-          <PerksSection />
-        </div>
         <div className="bg-white -mt-8">
-          <InsuranceQuizSection />
+          <PerksSection />
         </div>
       </div>
       <FooterSection />
