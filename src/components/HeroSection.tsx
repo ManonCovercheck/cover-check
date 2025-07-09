@@ -5,8 +5,7 @@ import heroImage from "@/assets/hero-bg.jpg";
 
 export const HeroSection = () => {
   const handleStartScan = () => {
-    // Link to external form (Tally/Typeform)
-    window.open("https://tally.so/r/wADOjO", "_blank");
+    window.open("https://tally.so/r/mY4XZq", "_blank");
   };
 
   return (

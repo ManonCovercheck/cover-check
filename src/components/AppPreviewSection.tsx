@@ -137,13 +137,8 @@ export const AppPreviewSection = () => {
 
             {/* Benefits Content - Removed */}
             <div className="order-1 lg:order-2 flex items-center justify-center">
-              <div className="text-center">
-                <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-                  Real Savings, Real Results
-                </h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Discover overlapping coverage and hidden savings across your insurance portfolio
-                </p>
+              <div className="text-center opacity-0">
+                {/* Empty space for layout balance */}
               </div>
             </div>
           </div>

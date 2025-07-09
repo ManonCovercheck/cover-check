@@ -1,15 +1,10 @@
-
-import { Heart, Plane, Smartphone, PawPrint, Home, Car, Briefcase, CreditCard, Plus } from "lucide-react";
+import { Heart, Plane, Smartphone, PawPrint, Home, Car, Briefcase, CreditCard, Shield } from "lucide-react";
+import { useState } from "react";
 
 export const InsuranceCategoriesSection = () => {
-  const handleSeeMore = () => {
-    // Scroll to FAQ section or show a modal with more insurance types
-    const faqSection = document.querySelector('#faq-section');
-    if (faqSection) {
-      faqSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-  const categories = [
+  const [showMore, setShowMore] = useState(false);
+
+  const baseCategories = [
     { icon: Heart, name: "Health", color: "text-red-500" },
     { icon: Plane, name: "Travel", color: "text-blue-500" },
     { icon: Smartphone, name: "Phone", color: "text-purple-500" },
@@ -19,6 +14,16 @@ export const InsuranceCategoriesSection = () => {
     { icon: CreditCard, name: "Credit Card", color: "text-pink-500" },
     { icon: Briefcase, name: "Life", color: "text-gray-600" }
   ];
+
+  const additionalCategories = [
+    { icon: Shield, name: "Umbrella", color: "text-teal-500" }
+  ];
+
+  const displayedCategories = showMore ? [...baseCategories, ...additionalCategories] : baseCategories;
+
+  const handleSeeMore = () => {
+    setShowMore(!showMore);
+  };
 
   return (
     <section className="py-16 bg-background">
@@ -33,7 +38,7 @@ export const InsuranceCategoriesSection = () => {
         </div>
 
         <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 max-w-4xl mx-auto">
-          {categories.map((category, index) => (
+          {displayedCategories.map((category, index) => (
             <div key={index} className="flex flex-col items-center group p-4">
               <div className="w-14 h-14 bg-muted rounded-xl flex items-center justify-center mb-3 group-hover:bg-primary/10 transition-colors duration-300">
                 <category.icon className={`h-6 w-6 ${category.color} group-hover:scale-110 transition-transform duration-300`} />
@@ -48,7 +53,7 @@ export const InsuranceCategoriesSection = () => {
             onClick={handleSeeMore}
             className="text-primary font-medium hover:text-primary/80 transition-colors duration-300"
           >
-            See More
+            {showMore ? "See Less" : "See More"}
           </button>
         </div>
       </div>

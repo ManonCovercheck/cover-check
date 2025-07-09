@@ -4,8 +4,18 @@ import { ArrowRight, Mail, Phone, MapPin } from "lucide-react";
 
 export const FooterSection = () => {
   const handleStartScan = () => {
-    // Link to external form (Tally/Typeform)
-    window.open("https://tally.so/r/wADOjO", "_blank");
+    window.open("https://tally.so/r/mY4XZq", "_blank");
+  };
+
+  const handleFooterLink = (section: string) => {
+    // Scroll to sections or show coming soon message
+    if (section === 'how-it-works') {
+      document.querySelector('#how-it-works')?.scrollIntoView({ behavior: 'smooth' });
+    } else if (section === 'pricing') {
+      document.querySelector('#faq-section')?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      alert('Coming soon! This feature will be available at launch.');
+    }
   };
 
   return (
@@ -58,10 +68,10 @@ export const FooterSection = () => {
             <div>
               <h3 className="font-semibold mb-4">Product</h3>
               <ul className="space-y-2 text-primary-foreground/80">
-                <li><button className="hover:text-primary-foreground transition-colors">How it Works</button></li>
-                <li><button className="hover:text-primary-foreground transition-colors">Pricing</button></li>
-                <li><button className="hover:text-primary-foreground transition-colors">Security</button></li>
-                <li><button className="hover:text-primary-foreground transition-colors">Coming Soon</button></li>
+                <li><button onClick={() => handleFooterLink('how-it-works')} className="hover:text-primary-foreground transition-colors">How it Works</button></li>
+                <li><button onClick={() => handleFooterLink('pricing')} className="hover:text-primary-foreground transition-colors">Pricing</button></li>
+                <li><button onClick={() => handleFooterLink('security')} className="hover:text-primary-foreground transition-colors">Security</button></li>
+                <li><button onClick={() => handleFooterLink('coming-soon')} className="hover:text-primary-foreground transition-colors">Coming Soon</button></li>
               </ul>
             </div>
 
@@ -69,10 +79,10 @@ export const FooterSection = () => {
             <div>
               <h3 className="font-semibold mb-4">Support</h3>
               <ul className="space-y-2 text-primary-foreground/80">
-                <li><button className="hover:text-primary-foreground transition-colors">Help Center</button></li>
-                <li><button className="hover:text-primary-foreground transition-colors">Contact Us</button></li>
-                <li><button className="hover:text-primary-foreground transition-colors">Privacy Policy</button></li>
-                <li><button className="hover:text-primary-foreground transition-colors">Terms of Service</button></li>
+                <li><button onClick={() => handleFooterLink('help')} className="hover:text-primary-foreground transition-colors">Help Center</button></li>
+                <li><button onClick={() => handleFooterLink('contact')} className="hover:text-primary-foreground transition-colors">Contact Us</button></li>
+                <li><button onClick={() => handleFooterLink('privacy')} className="hover:text-primary-foreground transition-colors">Privacy Policy</button></li>
+                <li><button onClick={() => handleFooterLink('terms')} className="hover:text-primary-foreground transition-colors">Terms of Service</button></li>
               </ul>
             </div>
           </div>

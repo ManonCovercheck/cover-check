@@ -13,7 +13,7 @@ export const FAQSection = () => {
     },
     {
       question: "Is my personal information secure?",
-      answer: "Absolutely. We use bank-level encryption and never store your personal documents. Our analysis happens in real-time, and all data is deleted immediately after your report is generated. We're SOC 2 certified and GDPR compliant.",
+      answer: "Absolutely. We use enterprise-grade encryption and never store your personal documents. Our analysis happens in real-time, and all data is deleted immediately after your report is generated. We're SOC 2 certified and GDPR compliant.",
       icon: Lock
     },
     {
