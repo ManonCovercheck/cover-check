@@ -13,16 +13,16 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <HeroSection />
-      <div className="space-y-16">
+      <div className="space-y-8">
         <WhatYouGetSection />
-        <div className="space-y-8">
+        <div className="space-y-4">
           <OverlappingSection />
           <SmartClaimSection />
           <CoverSection />
           <PerksSection />
         </div>
         <AppPreviewSection />
-        <div className="space-y-8">
+        <div className="space-y-4">
           <InsuranceCategoriesSection />
           <InsuranceQuizSection />
         </div>

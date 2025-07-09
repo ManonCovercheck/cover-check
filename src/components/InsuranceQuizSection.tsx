@@ -50,7 +50,7 @@ export const InsuranceQuizSection = () => {
   };
 
   return (
-    <section className="py-24 bg-gradient-to-br from-primary/5 to-secondary/5">
+    <section className="py-16 bg-gradient-to-br from-primary/5 to-secondary/5">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
@@ -97,10 +97,10 @@ export const InsuranceQuizSection = () => {
                   onClick={handleStartQuiz}
                   disabled={selectedInsurance.length === 0}
                   size="lg"
-                  className="text-lg px-8 py-4 h-auto"
+                  className="text-base md:text-lg px-6 md:px-8 py-3 md:py-4 h-auto"
                 >
                   Calculate My Potential ({selectedInsurance.length} selected)
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
                 </Button>
               </div>
             </div>
