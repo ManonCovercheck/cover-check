@@ -54,12 +54,15 @@ export const InsuranceQuizSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              🧮 Quick Saving and Perk Calculators
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Select the insurance types you currently have, and we'll estimate your potential savings and hidden perks.
-            </p>
+            <div className="mb-8">
+              <Shield className="h-16 w-16 text-primary mx-auto mb-6" />
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+                Quick Saving and Perk Calculators
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                Select the insurance types you currently have, and we'll estimate your potential savings and hidden perks.
+              </p>
+            </div>
           </div>
 
           {!showResults ? (
