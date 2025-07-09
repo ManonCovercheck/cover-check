@@ -10,14 +10,14 @@ export const InsuranceQuizSection = () => {
   const [showResults, setShowResults] = useState(false);
 
   const insuranceTypes = [
-    { id: "health", name: "Health Insurance", icon: Heart, savings: 45, perks: 2 },
-    { id: "travel", name: "Travel Insurance", icon: Plane, savings: 120, perks: 3 },
-    { id: "phone", name: "Phone Insurance", icon: Smartphone, savings: 80, perks: 1 },
-    { id: "pet", name: "Pet Insurance", icon: PawPrint, savings: 60, perks: 1 },
-    { id: "home", name: "Home Insurance", icon: Home, savings: 200, perks: 4 },
-    { id: "auto", name: "Auto Insurance", icon: Car, savings: 150, perks: 3 },
-    { id: "life", name: "Life Insurance", icon: Briefcase, savings: 90, perks: 2 },
-    { id: "credit", name: "Credit Card Protection", icon: CreditCard, savings: 180, perks: 5 }
+    { id: "health", name: "Health Insurance", icon: Heart, savings: 45, perks: 2, color: "text-red-500" },
+    { id: "travel", name: "Travel Insurance", icon: Plane, savings: 120, perks: 3, color: "text-blue-500" },
+    { id: "phone", name: "Phone Insurance", icon: Smartphone, savings: 80, perks: 1, color: "text-purple-500" },
+    { id: "pet", name: "Pet Insurance", icon: PawPrint, savings: 60, perks: 1, color: "text-orange-500" },
+    { id: "home", name: "Home Insurance", icon: Home, savings: 200, perks: 4, color: "text-green-500" },
+    { id: "auto", name: "Auto Insurance", icon: Car, savings: 150, perks: 3, color: "text-blue-600" },
+    { id: "life", name: "Life Insurance", icon: Briefcase, savings: 90, perks: 2, color: "text-gray-600" },
+    { id: "credit", name: "Credit Card Protection", icon: CreditCard, savings: 180, perks: 5, color: "text-pink-500" }
   ];
 
   const handleInsuranceToggle = (insuranceId: string) => {
@@ -82,9 +82,13 @@ export const InsuranceQuizSection = () => {
                        <div className={`w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-3 ${
                          selectedInsurance.includes(insurance.id)
                            ? 'bg-primary text-primary-foreground'
-                           : 'bg-muted text-muted-foreground'
+                           : 'bg-muted'
                        }`}>
-                         <Shield className="h-6 w-6 text-primary" />
+                         <insurance.icon className={`h-6 w-6 ${
+                           selectedInsurance.includes(insurance.id) 
+                             ? 'text-primary-foreground' 
+                             : insurance.color
+                         }`} />
                        </div>
                        <h3 className="font-medium text-sm text-foreground">{insurance.name}</h3>
                        {selectedInsurance.includes(insurance.id) && (
