@@ -11,8 +11,8 @@ export const AppPreviewSection = () => {
   };
 
   const tabs = [
-    { id: "overlapping", label: "Overlapping", icon: DollarSign },
-    { id: "smart-claim", label: "Smart Claim", icon: FileText },
+    { id: "overlapping", label: "Overlap", icon: DollarSign },
+    { id: "smart-claim", label: "Claims", icon: FileText },
     { id: "cover", label: "Cover", icon: Shield },
     { id: "perks", label: "Perks", icon: Gift }
   ];
@@ -24,7 +24,9 @@ export const AppPreviewSection = () => {
           <div className="p-6 space-y-4">
             <div className="bg-red-50 border border-red-200 rounded-xl p-4">
               <div className="flex items-center gap-3 mb-2">
-                <DollarSign className="h-5 w-5 text-red-600" />
+                <div className="w-5 h-5 rounded-full bg-red-600 flex items-center justify-center">
+                  <span className="text-white text-xs font-bold">{currency}</span>
+                </div>
                 <h4 className="font-semibold text-red-800">Save {currency}327/year</h4>
               </div>
               <p className="text-red-600 text-sm">By removing duplicate coverage</p>
@@ -124,7 +126,7 @@ export const AppPreviewSection = () => {
           <div className="relative mx-auto w-72 mb-12">
             {/* Phone Frame */}
             <div className="bg-gray-900 rounded-[2.5rem] p-2 shadow-phone border border-gray-800 backdrop-blur-sm">
-              <div className="bg-black rounded-[2rem] overflow-hidden h-[600px]">
+              <div className="bg-black rounded-[2rem] overflow-hidden h-[650px]">
                 {/* Status Bar */}
                 <div className="bg-black text-white px-6 py-2 flex justify-between items-center text-sm">
                   <span>9:41</span>
@@ -147,21 +149,21 @@ export const AppPreviewSection = () => {
                       <button
                         key={tab.id}
                         onClick={() => setActiveTab(tab.id)}
-                        className={`p-3 text-xs font-medium transition-colors ${
+                        className={`p-2 text-[10px] font-medium transition-colors ${
                           activeTab === tab.id
                             ? 'text-primary border-b-2 border-primary bg-primary/5'
                             : 'text-muted-foreground hover:text-foreground'
                         }`}
                       >
-                        <tab.icon className="h-4 w-4 mx-auto mb-1" />
-                        {tab.label}
+                        <tab.icon className="h-3 w-3 mx-auto mb-1" />
+                        <div className="truncate">{tab.label}</div>
                       </button>
                     ))}
                   </div>
                 </div>
 
                 {/* Tab Content */}
-                <div className="bg-white h-[300px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
+                <div className="bg-white h-[380px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
                   <div className="min-h-[400px]">
                     {getTabContent()}
                   </div>
