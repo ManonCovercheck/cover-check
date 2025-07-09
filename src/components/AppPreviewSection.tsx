@@ -41,79 +41,79 @@ export const AppPreviewSection = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Smartphone Mockup */}
             <div className="order-2 lg:order-1 flex justify-center">
-              <div className="relative w-64 max-w-xs mx-auto">
+              <div className="relative w-72 max-w-sm mx-auto">
                 {/* iPhone Frame */}
-                <div className="relative bg-gray-900 rounded-[2.5rem] p-3 shadow-2xl">
+                <div className="relative bg-gray-900 rounded-[3rem] p-4 shadow-2xl">
                   {/* Screen Bezel */}
-                  <div className="bg-black rounded-[2rem] p-1.5">
+                  <div className="bg-black rounded-[2.5rem] p-2">
                     {/* Notch */}
-                    <div className="bg-black h-5 w-24 rounded-b-xl mx-auto mb-1.5 relative">
-                      <div className="absolute top-0.5 left-1/2 transform -translate-x-1/2 w-12 h-0.5 bg-gray-800 rounded-full"></div>
+                    <div className="bg-black h-6 w-28 rounded-b-2xl mx-auto mb-2 relative">
+                      <div className="absolute top-1 left-1/2 transform -translate-x-1/2 w-14 h-1 bg-gray-800 rounded-full"></div>
                     </div>
                     
                     {/* Screen Content */}
-                    <div className="bg-background rounded-[1.5rem] overflow-hidden h-96">
+                    <div className="bg-background rounded-[2rem] overflow-hidden h-[500px]">
                       {/* Status Bar */}
-                      <div className="flex justify-between items-center px-4 py-1.5 bg-background text-xs">
+                      <div className="flex justify-between items-center px-5 py-2 bg-background text-xs">
                         <span className="font-medium text-foreground">9:41</span>
                         <div className="flex items-center gap-1">
-                          <div className="w-3 h-1.5 border border-foreground rounded-sm">
-                            <div className="w-2 h-0.5 bg-foreground rounded-sm m-0.5"></div>
+                          <div className="w-4 h-2 border border-foreground rounded-sm">
+                            <div className="w-3 h-1 bg-foreground rounded-sm m-0.5"></div>
                           </div>
                         </div>
                       </div>
 
                       {/* App Content */}
-                      <div className="px-3 pb-3 flex flex-col h-full">
+                      <div className="px-4 pb-4 flex flex-col h-full">
                         {/* App Header */}
-                        <div className="flex items-center justify-between mb-4 px-1">
+                        <div className="flex items-center justify-between mb-5 px-2">
                           <div>
-                            <h3 className="text-lg font-bold text-foreground">CoverCheck</h3>
-                            <p className="text-xs text-muted-foreground">Analysis Complete</p>
+                            <h3 className="text-xl font-bold text-foreground">CoverCheck</h3>
+                            <p className="text-sm text-muted-foreground">Analysis Complete</p>
                           </div>
-                          <div className="w-8 h-8 bg-gradient-primary rounded-full flex items-center justify-center">
-                            <Shield className="h-4 w-4 text-primary-foreground" />
+                          <div className="w-10 h-10 bg-gradient-primary rounded-full flex items-center justify-center">
+                            <Shield className="h-5 w-5 text-primary-foreground" />
                           </div>
                         </div>
 
                         {/* Savings Card */}
-                        <div className="bg-gradient-primary rounded-xl p-4 mb-4 text-center">
-                          <div className="flex items-center justify-center gap-1 mb-2">
+                        <div className="bg-gradient-primary rounded-2xl p-5 mb-5 text-center">
+                          <div className="flex items-center justify-center gap-2 mb-2">
                             <TrendingDown className="h-4 w-4 text-primary-foreground" />
-                            <span className="text-xs font-medium text-primary-foreground/90">Annual Savings</span>
+                            <span className="text-sm font-medium text-primary-foreground/90">Annual Savings</span>
                           </div>
-                          <div className="text-2xl font-bold text-primary-foreground mb-1">£1,476</div>
-                          <div className="text-xs text-primary-foreground/80">From 4 policies</div>
-                          <div className="mt-2 bg-white/20 rounded-full px-3 py-1 inline-block">
-                            <span className="text-xs font-medium text-primary-foreground">49% reduction</span>
+                          <div className="text-3xl font-bold text-primary-foreground mb-1">£1,476</div>
+                          <div className="text-sm text-primary-foreground/80">From 4 policies</div>
+                          <div className="mt-3 bg-white/20 rounded-full px-3 py-1.5 inline-block">
+                            <span className="text-sm font-medium text-primary-foreground">49% reduction</span>
                           </div>
                         </div>
 
-                        {/* Policy Breakdown - Shortened */}
-                        <div className="space-y-2 mb-4 flex-1">
-                          <h4 className="font-semibold text-foreground px-1 text-sm">Coverage Overlaps</h4>
+                        {/* Policy Breakdown */}
+                        <div className="space-y-3 mb-5 flex-1">
+                          <h4 className="font-semibold text-foreground px-2">Coverage Overlaps</h4>
                           {savingsData.slice(0, 2).map((item, index) => (
-                            <div key={index} className="bg-card rounded-lg p-3 border border-border/50 shadow-sm">
+                            <div key={index} className="bg-card rounded-xl p-3 border border-border/50 shadow-sm">
                               <div className="flex items-center justify-between">
                                 <div className="flex-1">
-                                  <div className="font-medium text-foreground text-sm">{item.category}</div>
-                                  <div className="text-xs text-muted-foreground mt-0.5">{item.overlap}</div>
+                                  <div className="font-medium text-foreground">{item.category}</div>
+                                  <div className="text-sm text-muted-foreground mt-1">{item.overlap}</div>
                                 </div>
-                                <div className="text-right bg-secondary/10 rounded-lg px-2 py-1">
-                                  <div className="font-bold text-secondary text-sm">{item.savings}</div>
+                                <div className="text-right bg-secondary/10 rounded-lg px-3 py-1.5">
+                                  <div className="font-bold text-secondary">{item.savings}</div>
                                   <div className="text-xs text-muted-foreground">saved</div>
                                 </div>
                               </div>
                             </div>
                           ))}
-                          <div className="text-center text-xs text-muted-foreground">+2 more overlaps found</div>
+                          <div className="text-center text-sm text-muted-foreground">+2 more overlaps found</div>
                         </div>
 
                         {/* Action Buttons */}
-                        <div className="space-y-2 px-1 mt-auto">
+                        <div className="space-y-3 px-2 mt-auto">
                           <button 
                             onClick={handleGetActionPlan}
-                            className="w-full bg-secondary text-secondary-foreground rounded-lg py-2.5 font-semibold text-center shadow-sm hover:bg-secondary/90 transition-colors text-sm"
+                            className="w-full bg-secondary text-secondary-foreground rounded-xl py-3 font-semibold text-center shadow-sm hover:bg-secondary/90 transition-colors"
                           >
                             Get Full Plan - £29/year
                           </button>
@@ -121,8 +121,8 @@ export const AppPreviewSection = () => {
                       </div>
 
                       {/* Home Indicator */}
-                      <div className="flex justify-center pb-1.5">
-                        <div className="w-24 h-0.5 bg-gray-400 rounded-full"></div>
+                      <div className="flex justify-center pb-2">
+                        <div className="w-28 h-1 bg-gray-400 rounded-full"></div>
                       </div>
                     </div>
                   </div>
