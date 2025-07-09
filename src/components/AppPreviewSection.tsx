@@ -127,7 +127,7 @@ export const AppPreviewSection = () => {
             </div>
 
             {/* Text Content */}
-            <div className="order-1 lg:order-2">
+            <div className="order-1 lg:order-2 text-center lg:text-left">
               <div className="space-y-6">
                 <div>
                   <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -165,7 +165,7 @@ export const AppPreviewSection = () => {
 
                 <div className="bg-gradient-subtle rounded-xl p-6">
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-foreground mb-2">Average Family Saves</div>
+                    <div className="text-2xl font-bold text-foreground mb-2">Average Savings</div>
                     <div className="text-3xl font-bold text-secondary mb-2">£1,200+ per year</div>
                     <div className="text-sm text-muted-foreground">Based on common overlap patterns</div>
                   </div>
