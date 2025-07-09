@@ -1,3 +1,4 @@
+
 import { Upload, Search, PiggyBank } from "lucide-react";
 
 export const HowItWorksSection = () => {
@@ -9,13 +10,13 @@ export const HowItWorksSection = () => {
     },
     {
       icon: Search,
-      title: "AI Analysis",
-      description: "Our smart technology scans for overlapping coverage, gaps, and overpayment opportunities across all your policies."
+      title: "Free AI Analysis",
+      description: "Our smart technology scans for overlapping coverage, gaps, and potential savings opportunities across all your policies."
     },
     {
       icon: PiggyBank,
-      title: "Get Your Savings Report",
-      description: "Receive a personalized report showing exactly where you can save money and eliminate redundant coverage."
+      title: "Get Detailed Savings Plan",
+      description: "Receive a free overview of potential savings. Unlock detailed recommendations and step-by-step action plan for £29/year."
     }
   ];
 
@@ -27,7 +28,7 @@ export const HowItWorksSection = () => {
             How CoverCheck Works
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Three simple steps to financial clarity and insurance savings
+            Free analysis first, then unlock detailed savings plan
           </p>
         </div>
 

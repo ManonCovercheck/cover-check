@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, CheckCircle } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
@@ -38,15 +39,15 @@ export const HeroSection = () => {
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Discover hidden duplicates, uncover savings, and get complete clarity on all your insurance policies in under 3 minutes.
+            Get a free analysis of your insurance policies and discover potential savings. Detailed insights and action plan available for £29/year.
           </p>
 
           {/* Key Benefits */}
           <div className="flex flex-wrap justify-center gap-6 mb-10">
             {[
-              "Find duplicate coverage",
+              "Free coverage analysis",
               "Save $1,200+ annually", 
-              "100% free scan"
+              "Detailed plan for £29/year"
             ].map((benefit, index) => (
               <div key={index} className="flex items-center gap-2 bg-background/10 backdrop-blur-sm rounded-lg px-4 py-2">
                 <CheckCircle className="h-5 w-5 text-secondary" />
@@ -62,13 +63,13 @@ export const HeroSection = () => {
             size="lg"
             className="text-lg px-8 py-4 h-auto"
           >
-            Get Your Free Insurance Scan
+            Get Your Free Insurance Analysis
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
 
           {/* Trust Indicators */}
           <p className="text-primary-foreground/70 text-sm mt-4">
-            No signup required • Results in 3 minutes • 100% secure
+            Free analysis • Results in 3 minutes • Detailed plan £29/year
           </p>
         </div>
       </div>

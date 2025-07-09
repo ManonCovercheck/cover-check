@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Mail, Phone, MapPin } from "lucide-react";
 
@@ -16,7 +17,7 @@ export const FooterSection = () => {
             Ready to Uncover Your Savings?
           </h2>
           <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-            Join 50,000+ families who've already discovered hidden money in their insurance policies.
+            Join 50,000+ families who've discovered potential savings with our free analysis. Unlock detailed action plans for £29/year.
           </p>
           
           <Button
@@ -25,12 +26,12 @@ export const FooterSection = () => {
             size="lg"
             className="text-lg px-8 py-4 h-auto mb-6"
           >
-            Start Your Free Scan
+            Start Your Free Analysis
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
           
           <p className="text-primary-foreground/70 text-sm">
-            No signup required • Get results in 3 minutes • 100% free forever
+            Free analysis • Results in 3 minutes • Detailed plan £29/year
           </p>
         </div>
       </div>
@@ -43,7 +44,7 @@ export const FooterSection = () => {
             <div className="md:col-span-2">
               <div className="text-2xl font-bold mb-4">CoverCheck</div>
               <p className="text-primary-foreground/80 mb-6 max-w-md">
-                The smart way to analyze your insurance portfolio and discover hidden savings opportunities.
+                Free insurance analysis with detailed savings plans. Discover hidden opportunities in your insurance portfolio.
               </p>
               <div className="flex gap-4">
                 <div className="flex items-center gap-2 text-sm text-primary-foreground/70">

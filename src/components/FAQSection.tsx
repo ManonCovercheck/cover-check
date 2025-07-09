@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { ChevronDown, Shield, Lock, Clock, Zap } from "lucide-react";
 
@@ -6,14 +7,14 @@ export const FAQSection = () => {
 
   const faqs = [
     {
+      question: "What do I get for free vs. paid?",
+      answer: "You get a free analysis showing potential savings and coverage gaps. For £29/year, you unlock detailed recommendations, step-by-step action plans, and ongoing policy monitoring with alerts when better deals become available.",
+      icon: Zap
+    },
+    {
       question: "Is my personal information secure?",
       answer: "Absolutely. We use bank-level encryption and never store your personal documents. Our analysis happens in real-time, and all data is deleted immediately after your report is generated. We're SOC 2 certified and GDPR compliant.",
       icon: Lock
-    },
-    {
-      question: "How can this be free?",
-      answer: "CoverCheck is free because we believe everyone deserves insurance clarity. We may earn referral fees if you choose to switch providers through our recommendations, but there's never any pressure to buy anything.",
-      icon: Zap
     },
     {
       question: "What if I have complex business insurance?",
@@ -22,7 +23,7 @@ export const FAQSection = () => {
     },
     {
       question: "How long does the analysis take?",
-      answer: "Most scans complete in under 3 minutes. Complex portfolios with many policies might take up to 5 minutes. You'll get an instant preliminary report, with detailed recommendations available within 24 hours.",
+      answer: "Most scans complete in under 3 minutes. You'll get an instant preliminary report showing potential savings. The detailed action plan (available with subscription) is generated within 24 hours.",
       icon: Clock
     }
   ];
@@ -35,7 +36,7 @@ export const FAQSection = () => {
             Common Questions
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Everything you need to know about getting your insurance scan
+            Everything you need to know about your insurance analysis
           </p>
         </div>
 
