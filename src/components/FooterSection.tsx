@@ -17,7 +17,7 @@ export const FooterSection = () => {
             Ready to Uncover Your Savings?
           </h2>
           <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-            Join 50,000+ families who've discovered potential savings with our free analysis. Unlock detailed action plans for £29/year.
+            Join the waitlist and be among the first to discover potential savings with our free analysis. Unlock detailed action plans for £29/year.
           </p>
           
           <Button
@@ -61,7 +61,7 @@ export const FooterSection = () => {
                 <li><button className="hover:text-primary-foreground transition-colors">How it Works</button></li>
                 <li><button className="hover:text-primary-foreground transition-colors">Pricing</button></li>
                 <li><button className="hover:text-primary-foreground transition-colors">Security</button></li>
-                <li><button className="hover:text-primary-foreground transition-colors">API</button></li>
+                <li><button className="hover:text-primary-foreground transition-colors">Coming Soon</button></li>
               </ul>
             </div>
 

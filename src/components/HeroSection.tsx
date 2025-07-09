@@ -26,7 +26,7 @@ export const HeroSection = () => {
           {/* Trust Badge */}
           <div className="inline-flex items-center gap-2 bg-background/90 backdrop-blur-sm rounded-full px-4 py-2 mb-8 shadow-soft">
             <Shield className="h-4 w-4 text-secondary" />
-            <span className="text-sm font-medium text-foreground">Trusted by 50,000+ families</span>
+            <span className="text-sm font-medium text-foreground">Smart Insurance Analysis</span>
           </div>
 
           {/* Main Headline */}
@@ -46,7 +46,7 @@ export const HeroSection = () => {
           <div className="flex flex-wrap justify-center gap-6 mb-10">
             {[
               "Free coverage analysis",
-              "Save $1,200+ annually", 
+              "Identify potential savings", 
               "Detailed plan for £29/year"
             ].map((benefit, index) => (
               <div key={index} className="flex items-center gap-2 bg-background/10 backdrop-blur-sm rounded-lg px-4 py-2">

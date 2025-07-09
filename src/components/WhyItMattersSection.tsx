@@ -1,27 +1,28 @@
+
 import { DollarSign, Shield, Heart, TrendingUp, CheckCircle2, Zap } from "lucide-react";
 
 export const WhyItMattersSection = () => {
   const benefits = [
     {
       icon: DollarSign,
-      title: "Save $1,200+ Per Year",
-      description: "Average savings from eliminating duplicate coverage and finding better rates",
-      stat: "$1,247",
-      statLabel: "avg. annual savings"
+      title: "Potential Savings",
+      description: "Many families unknowingly pay for overlapping insurance coverage across different policies",
+      stat: "Up to",
+      statLabel: "thousands per year"
     },
     {
       icon: Shield,
-      title: "Perfect Coverage",
+      title: "Better Coverage",
       description: "Identify gaps in protection and ensure you're covered for what matters most",
-      stat: "98%",
-      statLabel: "found coverage gaps"
+      stat: "Smart",
+      statLabel: "coverage analysis"
     },
     {
       icon: Heart,
       title: "Peace of Mind",
       description: "Sleep better knowing your family is properly protected without overpaying",
-      stat: "4.9/5",
-      statLabel: "satisfaction rating"
+      stat: "Clear",
+      statLabel: "recommendations"
     }
   ];
 
@@ -92,7 +93,7 @@ export const WhyItMattersSection = () => {
             <div className="mt-10 text-center">
               <div className="inline-flex items-center gap-2 text-muted-foreground">
                 <TrendingUp className="h-4 w-4" />
-                <span className="text-sm">Based on analysis of 50,000+ policy scans</span>
+                <span className="text-sm">Based on common insurance overlap patterns</span>
               </div>
             </div>
           </div>

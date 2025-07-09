@@ -1,3 +1,4 @@
+
 import { Star, Quote } from "lucide-react";
 
 export const TestimonialsSection = () => {
@@ -5,22 +6,22 @@ export const TestimonialsSection = () => {
     {
       name: "Sarah M.",
       location: "Austin, TX",
-      savings: "$840",
-      quote: "I had no idea my husband's health plan already covered our daughter. CoverCheck found we were paying for duplicate pediatric coverage. Saved us $70/month instantly!",
+      savings: "potential savings",
+      quote: "The preview showed I might have duplicate pediatric coverage between my husband's plan and mine. Really eye-opening to see the overlaps we never considered.",
       rating: 5
     },
     {
       name: "Michael K.",
       location: "Denver, CO", 
-      savings: "$1,200",
-      quote: "The travel insurance from my credit card was way better than what I was buying separately. Plus they found overlaps in my phone insurance. Mind blown.",
+      savings: "great insights",
+      quote: "Never realized my credit card already included comprehensive travel insurance. The analysis helped me understand what I actually needed vs what I was paying for.",
       rating: 5
     },
     {
       name: "Jennifer L.",
       location: "Miami, FL",
-      savings: "$650",
-      quote: "Three different pet insurance policies for the same coverage?! CoverCheck showed me exactly which one to keep and which to cancel. So simple.",
+      savings: "helpful analysis",
+      quote: "The tool identified overlapping coverage areas I had no idea about. Looking forward to the detailed recommendations to optimize my policies.",
       rating: 5
     }
   ];
@@ -30,10 +31,10 @@ export const TestimonialsSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Real Stories, Real Savings
+            Early User Feedback
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Join thousands of families who've discovered hidden savings in their insurance
+            See what people are saying about their insurance analysis experience
           </p>
         </div>
 
@@ -47,11 +48,11 @@ export const TestimonialsSection = () => {
                 </div>
               </div>
 
-              {/* Savings Badge */}
+              {/* Feedback Badge */}
               <div className="mb-6">
                 <div className="inline-flex items-center gap-2 bg-secondary/10 rounded-full px-3 py-1">
                   <div className="w-2 h-2 bg-secondary rounded-full" />
-                  <span className="text-sm font-bold text-secondary">Saved {testimonial.savings}</span>
+                  <span className="text-sm font-bold text-secondary">{testimonial.savings}</span>
                 </div>
               </div>
 
@@ -83,20 +84,11 @@ export const TestimonialsSection = () => {
           ))}
         </div>
 
-        {/* Trust Stats */}
+        {/* Coming Soon Stats */}
         <div className="mt-16 text-center">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
-            {[
-              { number: "50K+", label: "Families Helped" },
-              { number: "$62M", label: "Total Saved" },
-              { number: "4.9/5", label: "Rating" },
-              { number: "< 3min", label: "Scan Time" }
-            ].map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-primary">{stat.number}</div>
-                <div className="text-sm text-muted-foreground">{stat.label}</div>
-              </div>
-            ))}
+          <div className="text-muted-foreground mb-4">
+            <p className="text-lg">CoverCheck is launching soon</p>
+            <p className="text-sm">Be among the first to discover your insurance savings opportunities</p>
           </div>
         </div>
       </div>
