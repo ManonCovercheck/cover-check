@@ -4,7 +4,7 @@ export const CoverSection = () => {
   const coverageItems = [
     { type: "Phone Insurance", status: "Covered", provider: "Orange SPB", color: "green", icon: CheckCircle },
     { type: "Travel Protection", status: "Covered", provider: "Credit Card", color: "green", icon: CheckCircle },
-    { type: "Rental Car Coverage", status: "Covered", provider: "Employer", color: "blue", icon: Clock },
+    { type: "Rental Car Coverage", status: "Covered", provider: "Employer", color: "green", icon: CheckCircle },
     { type: "Purchase Protection", status: "Missing", provider: "Multiple", color: "gray", icon: AlertTriangle }
   ];
 
