@@ -147,52 +147,8 @@ export const AppPreviewSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
-            {/* Left Side - Text Content */}
-            <div className="space-y-6 lg:order-1">
-              <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                  See Everything in One App
-                </h2>
-                <p className="text-lg text-muted-foreground mb-6">
-                  Get instant insights into your insurance coverage, identify overlaps, discover hidden perks, and make smarter claims with our comprehensive coverage dashboard.
-                </p>
-              </div>
-              
-              <div className="space-y-4">
-                <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center">
-                    <span className="text-green-600 font-bold text-sm">{currency}</span>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground">Stop Overpaying</h4>
-                    <p className="text-sm text-muted-foreground">Identify duplicate coverage and save hundreds annually</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
-                    <FileText className="h-4 w-4 text-blue-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground">Smart Claims</h4>
-                    <p className="text-sm text-muted-foreground">Know exactly what's covered before you claim</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center">
-                    <Gift className="h-4 w-4 text-purple-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground">Hidden Perks</h4>
-                    <p className="text-sm text-muted-foreground">Unlock benefits you're already paying for</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Right Side - Phone Mockup */}
-            <div className="relative mx-auto w-72 lg:order-2">
+            {/* Left Side - Phone Mockup */}
+            <div className="relative mx-auto w-72 lg:order-1">
               {/* Phone Frame */}
               <div className="bg-gray-900 rounded-[2.5rem] p-2 shadow-phone border border-gray-800 backdrop-blur-sm">
                 <div className="bg-black rounded-[2rem] overflow-hidden h-[650px]">
@@ -240,6 +196,50 @@ export const AppPreviewSection = () => {
                     <div className="min-h-[400px]">
                       {getTabContent()}
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Side - Text Content */}
+            <div className="space-y-6 lg:order-2">
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                  See Everything in One App
+                </h2>
+                <p className="text-lg text-muted-foreground mb-6">
+                  Get instant insights into your insurance coverage, identify overlaps, discover hidden perks, and make smarter claims with our comprehensive coverage dashboard.
+                </p>
+              </div>
+              
+              <div className="space-y-4">
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center">
+                    <span className="text-green-600 font-bold text-sm">{currency}</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">Stop Overpaying</h4>
+                    <p className="text-sm text-muted-foreground">Identify duplicate coverage and save hundreds annually</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
+                    <FileText className="h-4 w-4 text-blue-600" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">Smart Claims</h4>
+                    <p className="text-sm text-muted-foreground">Know exactly what's covered before you claim</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center">
+                    <Gift className="h-4 w-4 text-purple-600" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">Hidden Perks</h4>
+                    <p className="text-sm text-muted-foreground">Unlock benefits you're already paying for</p>
                   </div>
                 </div>
               </div>
