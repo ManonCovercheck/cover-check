@@ -135,10 +135,50 @@ export const AppPreviewSection = () => {
               </div>
             </div>
 
-            {/* Benefits Content - Removed */}
-            <div className="order-1 lg:order-2 flex items-center justify-center">
-              <div className="text-center opacity-0">
-                {/* Empty space for layout balance */}
+            {/* Text Content */}
+            <div className="order-1 lg:order-2">
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                    See Your Savings in Real-Time
+                  </h3>
+                  <p className="text-lg text-muted-foreground leading-relaxed">
+                    Our smart analysis instantly identifies overlapping coverage across all your insurance policies. 
+                    Get a clear breakdown of potential savings with actionable insights.
+                  </p>
+                </div>
+
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-secondary rounded-full mt-3 flex-shrink-0"></div>
+                    <div>
+                      <h4 className="font-semibold text-foreground mb-1">Instant Analysis</h4>
+                      <p className="text-muted-foreground">Upload your policies and get immediate insights in under 3 minutes</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-secondary rounded-full mt-3 flex-shrink-0"></div>
+                    <div>
+                      <h4 className="font-semibold text-foreground mb-1">Clear Savings Breakdown</h4>
+                      <p className="text-muted-foreground">See exactly where you're overpaying and how much you could save</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-secondary rounded-full mt-3 flex-shrink-0"></div>
+                    <div>
+                      <h4 className="font-semibold text-foreground mb-1">Actionable Recommendations</h4>
+                      <p className="text-muted-foreground">Get step-by-step guidance on how to claim your savings</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-subtle rounded-xl p-6">
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-foreground mb-2">Average Family Saves</div>
+                    <div className="text-3xl font-bold text-secondary mb-2">£1,200+ per year</div>
+                    <div className="text-sm text-muted-foreground">Based on common overlap patterns</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
