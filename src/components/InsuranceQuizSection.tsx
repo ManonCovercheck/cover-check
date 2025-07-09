@@ -1,9 +1,11 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Heart, Plane, Smartphone, PawPrint, Home, Car, Briefcase, CreditCard, Shield, CheckCircle, ArrowRight, DollarSign, Gift, AlertTriangle } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export const InsuranceQuizSection = () => {
+  const { currency } = useLanguage();
   const [selectedInsurance, setSelectedInsurance] = useState<string[]>([]);
   const [showResults, setShowResults] = useState(false);
 
@@ -112,7 +114,7 @@ export const InsuranceQuizSection = () => {
                 <div className="grid md:grid-cols-3 gap-6 mb-8">
                   <div className="bg-green-50 border border-green-200 rounded-xl p-6 text-center">
                     <DollarSign className="h-8 w-8 text-green-600 mx-auto mb-3" />
-                    <div className="text-3xl font-bold text-green-700 mb-2">€{results.totalSavings}</div>
+                    <div className="text-3xl font-bold text-green-700 mb-2">{currency}{results.totalSavings}</div>
                     <div className="text-green-600 text-sm">Potential annual savings</div>
                   </div>
                   
@@ -134,7 +136,7 @@ export const InsuranceQuizSection = () => {
                   <ul className="space-y-2 text-muted-foreground">
                     <li className="flex items-start gap-2">
                       <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                      <span>Most people with similar coverage save €{Math.round(results.totalSavings * 0.7)} annually</span>
+                      <span>Most people with similar coverage save {currency}{Math.round(results.totalSavings * 0.7)} annually</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />

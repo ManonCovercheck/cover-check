@@ -1,20 +1,22 @@
 import { Gift, CreditCard, Building, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export const PerksSection = () => {
+  const { currency } = useLanguage();
   const hiddenPerks = [
     {
       title: "Free Travel Insurance",
       source: "Visa Premium Card",
-      value: "€200/year",
-      description: "Covers medical, baggage, and trip cancellation up to €50,000",
+      value: `${currency}200/year`,
+      description: `Covers medical, baggage, and trip cancellation up to ${currency}50,000`,
       icon: CreditCard,
       color: "blue"
     },
     {
       title: "Rental Car Coverage",
       source: "Employer Benefits",
-      value: "€180/year", 
+      value: `${currency}180/year`, 
       description: "Full damage waiver and theft protection worldwide",
       icon: Building,
       color: "purple"
@@ -22,7 +24,7 @@ export const PerksSection = () => {
     {
       title: "Purchase Protection",
       source: "Multiple Cards",
-      value: "€300/year",
+      value: `${currency}300/year`,
       description: "90-day protection against theft, damage, and defects",
       icon: Sparkles,
       color: "green"
@@ -46,7 +48,7 @@ export const PerksSection = () => {
           <div className="bg-card rounded-3xl p-8 md:p-12 shadow-soft border">
             <div className="bg-green-50 border border-green-200 rounded-xl p-6 mb-8">
               <h3 className="text-2xl font-bold text-green-800 mb-2">
-                Found €680 in Unused Benefits
+                Found {currency}680 in Unused Benefits
               </h3>
               <p className="text-green-600">These perks are already included with your existing accounts</p>
             </div>

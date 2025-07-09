@@ -1,6 +1,8 @@
 import { DollarSign, AlertTriangle } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export const OverlappingSection = () => {
+  const { currency } = useLanguage();
   return (
     <section className="py-24 bg-muted/30">
       <div className="container mx-auto px-6">
@@ -40,7 +42,7 @@ export const OverlappingSection = () => {
                 <div className="bg-green-50 border border-green-200 rounded-xl p-6">
                   <h4 className="font-semibold text-green-800 mb-4">Potential Savings</h4>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-green-700 mb-2">€327</div>
+                    <div className="text-3xl font-bold text-green-700 mb-2">{currency}327</div>
                     <div className="text-green-600">per year</div>
                   </div>
                 </div>

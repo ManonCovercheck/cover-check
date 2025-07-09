@@ -1,8 +1,10 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { DollarSign, Gift, FileText, ArrowRight, CheckCircle, Shield } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export const AppPreviewSection = () => {
+  const { t, currency } = useLanguage();
   const [activeTab, setActiveTab] = useState("overlapping");
   const handleStartScan = () => {
     window.open("https://tally.so/r/mY4XZq", "_blank");
@@ -23,7 +25,7 @@ export const AppPreviewSection = () => {
             <div className="bg-red-50 border border-red-200 rounded-xl p-4">
               <div className="flex items-center gap-3 mb-2">
                 <DollarSign className="h-5 w-5 text-red-600" />
-                <h4 className="font-semibold text-red-800">Save €327/year</h4>
+                <h4 className="font-semibold text-red-800">Save {currency}327/year</h4>
               </div>
               <p className="text-red-600 text-sm">By removing duplicate coverage</p>
             </div>
@@ -95,7 +97,7 @@ export const AppPreviewSection = () => {
                 <Gift className="h-5 w-5 text-green-600" />
                 <h4 className="font-semibold text-green-800">Hidden Benefits</h4>
               </div>
-              <p className="text-green-600 text-sm">Found 5 unused perks worth €850/year</p>
+              <p className="text-green-600 text-sm">Found 5 unused perks worth {currency}850/year</p>
             </div>
             <div className="space-y-2">
               <div className="p-3 bg-blue-50 rounded-lg">
