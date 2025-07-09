@@ -71,7 +71,6 @@ export const FooterSection = () => {
                 <li><button onClick={() => handleFooterLink('how-it-works')} className="hover:text-primary-foreground transition-colors">How it Works</button></li>
                 <li><button onClick={() => handleFooterLink('pricing')} className="hover:text-primary-foreground transition-colors">Pricing</button></li>
                 <li><button onClick={() => handleFooterLink('security')} className="hover:text-primary-foreground transition-colors">Security</button></li>
-                <li><button onClick={() => handleFooterLink('coming-soon')} className="hover:text-primary-foreground transition-colors">Coming Soon</button></li>
               </ul>
             </div>
 
