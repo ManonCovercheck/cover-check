@@ -38,23 +38,23 @@ export const HeroSection = () => {
 
           {/* Main Headline */}
           <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
-            You're Covered.
+            {t('hero.title1')}
             <span className="block bg-gradient-to-r from-secondary to-secondary-light bg-clip-text text-transparent">
-              But Are You Benefiting?
+              {t('hero.title2')}
             </span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-            CoverCheck scans your insurance coverage to help you stop overpaying, unlock unused perks, and file smarter claims — all in one place.
+            {t('hero.subtitle')}
           </p>
 
           {/* Key Benefits */}
           <div className="flex flex-wrap justify-center gap-6 mb-10">
             {[
-              "Free coverage analysis",
-              "Identify potential savings", 
-              "Detailed action plan"
+              t('hero.benefit1'),
+              t('hero.benefit2'), 
+              t('hero.benefit3')
             ].map((benefit, index) => (
               <div key={index} className="flex items-center gap-2 bg-background/10 backdrop-blur-sm rounded-lg px-4 py-2">
                 <CheckCircle className="h-5 w-5 text-secondary" />
@@ -71,14 +71,14 @@ export const HeroSection = () => {
               size="lg"
               className="text-lg px-8 py-4 h-auto"
             >
-              Start Your Free Scan
+              {t('hero.cta')}
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>
 
           {/* Trust Indicators */}
           <p className="text-primary-foreground/70 text-sm mt-4">
-            Free analysis • Results in 3 minutes • Detailed action plan
+            {t('hero.trust')}
           </p>
         </div>
       </div>

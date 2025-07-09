@@ -2,23 +2,23 @@ import { Gift, FileText } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 export const WhatYouGetSection = () => {
-  const { currency } = useLanguage();
+  const { currency, t } = useLanguage();
   
   const benefits = [
     {
       icon: "currency" as const,
-      title: "Stop Overpaying",
-      description: "Find duplicate coverage you're paying for twice — and cancel the extra."
+      title: t('whatyouget.stop.title'),
+      description: t('whatyouget.stop.description')
     },
     {
       icon: Gift,
-      title: "Unlock Hidden Perks",
-      description: "You already have free travel, phone, or rental insurance from your card or employer. We'll show you how to actually use it."
+      title: t('whatyouget.unlock.title'),
+      description: t('whatyouget.unlock.description')
     },
     {
       icon: FileText,
-      title: "Smart Claim",
-      description: "Insurance rules are vague on purpose. We explain what's really covered, what to say, and how to avoid denials — all based on your real policy."
+      title: t('whatyouget.smart.title'),
+      description: t('whatyouget.smart.description')
     }
   ];
 
@@ -26,9 +26,9 @@ export const WhatYouGetSection = () => {
     <section className="py-24 bg-muted/20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            What You Get
-          </h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+              {t('whatyouget.title')}
+            </h2>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">

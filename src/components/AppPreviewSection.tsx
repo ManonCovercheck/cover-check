@@ -11,10 +11,10 @@ export const AppPreviewSection = () => {
   };
 
   const tabs = [
-    { id: "overlapping", label: "Overlap", iconType: "currency" as const },
-    { id: "smart-claim", label: "Claims", iconType: "component" as const, icon: FileText },
-    { id: "cover", label: "Cover", iconType: "component" as const, icon: Shield },
-    { id: "perks", label: "Perks", iconType: "component" as const, icon: Gift }
+    { id: "overlapping", label: t('app.tabs.overlap'), iconType: "currency" as const },
+    { id: "smart-claim", label: t('app.tabs.claims'), iconType: "component" as const, icon: FileText },
+    { id: "cover", label: t('app.tabs.cover'), iconType: "component" as const, icon: Shield },
+    { id: "perks", label: t('app.tabs.perks'), iconType: "component" as const, icon: Gift }
   ];
 
   const getTabContent = () => {
@@ -27,27 +27,27 @@ export const AppPreviewSection = () => {
                 <div className="w-5 h-5 rounded-full bg-red-600 flex items-center justify-center">
                   <span className="text-white text-xs font-bold">{currency}</span>
                 </div>
-                <h4 className="font-semibold text-red-800">Save {currency}327/year</h4>
+                <h4 className="font-semibold text-red-800">{t('app.overlap.save')}</h4>
               </div>
-              <p className="text-red-600 text-sm">By removing duplicate coverage</p>
+              <p className="text-red-600 text-sm">{t('app.overlap.subtitle')}</p>
             </div>
             <div className="space-y-2">
               <div className="flex items-center justify-between p-3 bg-orange-50 rounded-lg">
-                <span className="text-foreground">Travel Insurance</span>
+                <span className="text-foreground">{t('app.cover.travel')}</span>
                 <span className="bg-red-500 text-white text-xs px-2 py-1 rounded-full">x2</span>
               </div>
               <div className="flex items-center justify-between p-3 bg-yellow-50 rounded-lg">
-                <span className="text-foreground">Phone Protection</span>
+                <span className="text-foreground">{t('app.cover.phone')}</span>
                 <span className="bg-orange-500 text-white text-xs px-2 py-1 rounded-full">x2</span>
               </div>
               <div className="flex items-center justify-between p-3 bg-blue-50 rounded-lg">
-                <span className="text-foreground">Health Insurance</span>
+                <span className="text-foreground">Assurance Santé</span>
                 <span className="bg-yellow-500 text-white text-xs px-2 py-1 rounded-full">x3</span>
               </div>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-3">
-              <div className="text-sm font-medium text-green-800">Quick Fix</div>
-              <div className="text-xs text-green-600">Cancel 2 policies to save {currency}327/year</div>
+              <div className="text-sm font-medium text-green-800">{t('app.overlap.quickfix')}</div>
+              <div className="text-xs text-green-600">{t('app.overlap.cancel')}</div>
             </div>
           </div>
         );
@@ -55,48 +55,48 @@ export const AppPreviewSection = () => {
         return (
           <div className="p-6 space-y-4">
             <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
-              <h4 className="font-semibold text-blue-800 mb-2">📱 Phone Theft Guide</h4>
+              <h4 className="font-semibold text-blue-800 mb-2">{t('app.claims.title')}</h4>
               <div className="space-y-2 text-sm">
                  <div className="flex items-center gap-2">
                    <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0" />
-                   <span>Must be stolen from zipped bag</span>
+                   <span>{t('app.claims.bag')}</span>
                  </div>
                  <div className="flex items-center gap-2">
                    <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0" />
-                   <span>Police report within 48h</span>
+                   <span>{t('app.claims.police')}</span>
                  </div>
                  <div className="flex items-center gap-2">
                    <XCircle className="h-5 w-5 text-red-500 flex-shrink-0" />
-                   <span>Not covered if stolen on table at bar</span>
+                   <span>{t('app.claims.table')}</span>
                  </div>
               </div>
             </div>
             <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3">
-              <div className="text-sm font-medium text-yellow-800">💡 Pro Tip</div>
-              <div className="text-xs text-yellow-600">Always secure items in zipped bags</div>
+              <div className="text-sm font-medium text-yellow-800">{t('app.claims.tip')}</div>
+              <div className="text-xs text-yellow-600">{t('app.claims.secure')}</div>
             </div>
             <Button className="w-full" variant="outline">
               <FileText className="mr-2 h-4 w-4" />
-              View Full Claim Guide
+              {t('app.claims.guide')}
             </Button>
           </div>
         );
       case "cover":
         return (
           <div className="p-6 space-y-4">
-            <h4 className="font-semibold text-foreground mb-4">Your Coverage</h4>
+            <h4 className="font-semibold text-foreground mb-4">{t('app.cover.title')}</h4>
             <div className="space-y-3">
               {[
-                { type: "Phone Insurance", status: "Covered", color: "green" },
-                { type: "Travel Protection", status: "Covered", color: "green" },
-                { type: "Rental Car", status: "Covered", color: "blue" },
-                { type: "Dental Protection", status: "Missing", color: "red" }
+                { type: t('app.cover.phone'), status: t('app.cover.covered'), color: "green" },
+                { type: t('app.cover.travel'), status: t('app.cover.covered'), color: "green" },
+                { type: t('app.cover.rental'), status: t('app.cover.covered'), color: "blue" },
+                { type: t('app.cover.dental'), status: t('app.cover.missing'), color: "red" }
               ].map((item, index) => (
                 <div key={index} className="p-3 bg-muted/50 rounded-lg">
                   <div className="flex items-center justify-between">
                     <span className="text-foreground font-medium text-sm">{item.type}</span>
                      <span className={`text-xs px-2 py-1 rounded-full ${
-                        item.status === 'Covered' ? 'bg-green-100 text-green-700' :
+                        item.status === t('app.cover.covered') ? 'bg-green-100 text-green-700' :
                         'bg-red-100 text-red-700'
                       }`}>
                        {item.status}
@@ -113,35 +113,35 @@ export const AppPreviewSection = () => {
             <div className="bg-green-50 border border-green-200 rounded-xl p-4">
               <div className="flex items-center gap-3 mb-2">
                 <Gift className="h-5 w-5 text-green-600" />
-                <h4 className="font-semibold text-green-800">Hidden Benefits</h4>
+                <h4 className="font-semibold text-green-800">{t('app.perks.title')}</h4>
               </div>
-              <p className="text-green-600 text-sm">Found 5 unused perks worth {currency}850/year</p>
+              <p className="text-green-600 text-sm">{t('app.perks.subtitle')}</p>
             </div>
             <div className="space-y-2">
               <div className="p-3 bg-blue-50 rounded-lg">
-                <div className="font-medium text-blue-800 text-sm">Free Travel Insurance</div>
-                <div className="text-xs text-blue-600">Via your credit card • {currency}200 value</div>
+                <div className="font-medium text-blue-800 text-sm">{t('app.perks.travel')}</div>
+                <div className="text-xs text-blue-600">{t('app.perks.travel_desc')}</div>
               </div>
               <div className="p-3 bg-purple-50 rounded-lg">
-                <div className="font-medium text-purple-800 text-sm">Rental Car Coverage</div>
-                <div className="text-xs text-purple-600">Via employer benefits • {currency}180 value</div>
+                <div className="font-medium text-purple-800 text-sm">{t('app.perks.rental')}</div>
+                <div className="text-xs text-purple-600">{t('app.perks.rental_desc')}</div>
               </div>
               <div className="p-3 bg-orange-50 rounded-lg">
-                <div className="font-medium text-orange-800 text-sm">Extended Warranty</div>
-                <div className="text-xs text-orange-600">Via Amex card • {currency}300 value</div>
+                <div className="font-medium text-orange-800 text-sm">{t('app.perks.warranty')}</div>
+                <div className="text-xs text-orange-600">{t('app.perks.warranty_desc')}</div>
               </div>
               <div className="p-3 bg-green-50 rounded-lg">
-                <div className="font-medium text-green-800 text-sm">Purchase Protection</div>
-                <div className="text-xs text-green-600">Via mastercard • {currency}120 value</div>
+                <div className="font-medium text-green-800 text-sm">{t('app.perks.protection')}</div>
+                <div className="text-xs text-green-600">{t('app.perks.protection_desc')}</div>
               </div>
               <div className="p-3 bg-yellow-50 rounded-lg">
-                <div className="font-medium text-yellow-800 text-sm">Cashback Rewards</div>
-                <div className="text-xs text-yellow-600">Via reward program • {currency}50 value</div>
+                <div className="font-medium text-yellow-800 text-sm">{t('app.perks.cashback')}</div>
+                <div className="text-xs text-yellow-600">{t('app.perks.cashback_desc')}</div>
               </div>
             </div>
             <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3">
-              <div className="text-sm font-medium text-yellow-800">🎯 Action Needed</div>
-              <div className="text-xs text-yellow-600">Activate 3 unused benefits</div>
+              <div className="text-sm font-medium text-yellow-800">{t('app.perks.action')}</div>
+              <div className="text-xs text-yellow-600">{t('app.perks.activate')}</div>
             </div>
           </div>
         );
@@ -157,10 +157,10 @@ export const AppPreviewSection = () => {
           {/* Title Above Phone */}
           <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              See Everything in One App
+              {t('app.title')}
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">
-              Get instant insights into your insurance coverage, identify overlaps, discover hidden perks, and make smarter claims with our comprehensive coverage dashboard.
+              {t('app.subtitle')}
             </p>
           </div>
           
@@ -227,8 +227,8 @@ export const AppPreviewSection = () => {
                     <span className="text-green-600 font-bold text-lg">{currency}</span>
                   </div>
                   <div>
-                    <h4 className="text-2xl font-bold text-foreground mb-2">Stop Overpaying</h4>
-                    <p className="text-lg text-muted-foreground">Identify duplicate coverage and save hundreds annually</p>
+                    <h4 className="text-2xl font-bold text-foreground mb-2">{t('app.features.stop.title')}</h4>
+                    <p className="text-lg text-muted-foreground">{t('app.features.stop.desc')}</p>
                   </div>
                 </div>
                 
@@ -237,8 +237,8 @@ export const AppPreviewSection = () => {
                     <FileText className="h-6 w-6 text-blue-600" />
                   </div>
                   <div>
-                    <h4 className="text-2xl font-bold text-foreground mb-2">Smart Claims</h4>
-                    <p className="text-lg text-muted-foreground">Know exactly what's covered before you claim</p>
+                    <h4 className="text-2xl font-bold text-foreground mb-2">{t('app.features.claims.title')}</h4>
+                    <p className="text-lg text-muted-foreground">{t('app.features.claims.desc')}</p>
                   </div>
                 </div>
                 
@@ -247,8 +247,8 @@ export const AppPreviewSection = () => {
                     <Gift className="h-6 w-6 text-purple-600" />
                   </div>
                   <div>
-                    <h4 className="text-2xl font-bold text-foreground mb-2">Hidden Perks</h4>
-                    <p className="text-lg text-muted-foreground">Unlock benefits you're already paying for</p>
+                    <h4 className="text-2xl font-bold text-foreground mb-2">{t('app.features.perks.title')}</h4>
+                    <p className="text-lg text-muted-foreground">{t('app.features.perks.desc')}</p>
                   </div>
                 </div>
               </div>

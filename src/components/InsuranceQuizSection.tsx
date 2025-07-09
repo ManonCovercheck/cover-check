@@ -5,25 +5,25 @@ import { Heart, Plane, Smartphone, PawPrint, Home, Car, Briefcase, CreditCard, S
 import { useLanguage } from "@/contexts/LanguageContext";
 
 export const InsuranceQuizSection = () => {
-  const { currency } = useLanguage();
+  const { currency, t } = useLanguage();
   const [selectedInsurance, setSelectedInsurance] = useState<string[]>([]);
   const [showResults, setShowResults] = useState(false);
 
   const insuranceTypes = [
-    { id: "health", name: "Health", icon: Heart, savings: 45, perks: 2, color: "text-red-500" },
-    { id: "travel", name: "Travel", icon: Plane, savings: 120, perks: 3, color: "text-blue-500" },
-    { id: "phone", name: "Phone", icon: Smartphone, savings: 80, perks: 1, color: "text-purple-500" },
-    { id: "pet", name: "Pet", icon: PawPrint, savings: 60, perks: 1, color: "text-orange-500" },
-    { id: "home", name: "Home", icon: Home, savings: 200, perks: 4, color: "text-green-500" },
-    { id: "auto", name: "Auto", icon: Car, savings: 150, perks: 3, color: "text-blue-600" },
-    { id: "credit", name: "Credit Card", icon: CreditCard, savings: 180, perks: 5, color: "text-pink-500" },
-    { id: "life", name: "Life", icon: Briefcase, savings: 90, perks: 2, color: "text-gray-600" },
-    { id: "umbrella", name: "Umbrella", icon: Umbrella, savings: 75, perks: 2, color: "text-teal-500" },
-    { id: "dental", name: "Dental", icon: Heart, savings: 65, perks: 1, color: "text-blue-400" },
-    { id: "rental", name: "Rental Car", icon: Car, savings: 95, perks: 2, color: "text-yellow-500" },
-    { id: "disability", name: "Disability", icon: Briefcase, savings: 110, perks: 3, color: "text-pink-400" },
-    { id: "renters", name: "Renters", icon: Home, savings: 85, perks: 2, color: "text-green-400" },
-    { id: "liability", name: "Liability", icon: Shield, savings: 70, perks: 1, color: "text-purple-600" }
+    { id: "health", name: t('insurance.health'), icon: Heart, savings: 45, perks: 2, color: "text-red-500" },
+    { id: "travel", name: t('insurance.travel'), icon: Plane, savings: 120, perks: 3, color: "text-blue-500" },
+    { id: "phone", name: t('insurance.phone'), icon: Smartphone, savings: 80, perks: 1, color: "text-purple-500" },
+    { id: "pet", name: t('insurance.pet'), icon: PawPrint, savings: 60, perks: 1, color: "text-orange-500" },
+    { id: "home", name: t('insurance.home'), icon: Home, savings: 200, perks: 4, color: "text-green-500" },
+    { id: "auto", name: t('insurance.auto'), icon: Car, savings: 150, perks: 3, color: "text-blue-600" },
+    { id: "credit", name: t('insurance.credit'), icon: CreditCard, savings: 180, perks: 5, color: "text-pink-500" },
+    { id: "life", name: t('insurance.life'), icon: Briefcase, savings: 90, perks: 2, color: "text-gray-600" },
+    { id: "umbrella", name: t('insurance.umbrella'), icon: Umbrella, savings: 75, perks: 2, color: "text-teal-500" },
+    { id: "dental", name: t('insurance.dental'), icon: Heart, savings: 65, perks: 1, color: "text-blue-400" },
+    { id: "rental", name: t('insurance.rental'), icon: Car, savings: 95, perks: 2, color: "text-yellow-500" },
+    { id: "disability", name: t('insurance.disability'), icon: Briefcase, savings: 110, perks: 3, color: "text-pink-400" },
+    { id: "renters", name: t('insurance.renters'), icon: Home, savings: 85, perks: 2, color: "text-green-400" },
+    { id: "liability", name: t('insurance.liability'), icon: Shield, savings: 70, perks: 1, color: "text-purple-600" }
   ];
 
   const handleInsuranceToggle = (insuranceId: string) => {
@@ -63,10 +63,10 @@ export const InsuranceQuizSection = () => {
             <div className="mb-8">
               <Shield className="h-16 w-16 text-primary mx-auto mb-6" />
               <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-                Quick Saving and Perk Calculators
+                {t('quiz.title')}
               </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Select the insurance types you currently have, and we'll estimate your potential savings and hidden perks.
+                {t('quiz.subtitle')}
               </p>
             </div>
           </div>
