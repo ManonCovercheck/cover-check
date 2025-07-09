@@ -143,7 +143,7 @@ export const AppPreviewSection = () => {
   };
 
   return (
-    <section className="py-8 bg-gradient-to-br from-background via-muted/20 to-background">
+    <section className="py-8">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
