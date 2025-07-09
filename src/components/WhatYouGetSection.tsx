@@ -1,24 +1,27 @@
-import { DollarSign, Gift, FileText } from "lucide-react";
-
-const benefits = [
-  {
-    icon: DollarSign,
-    title: "💰 Stop Overpaying",
-    description: "Find duplicate coverage you're paying for twice — and cancel the extra."
-  },
-  {
-    icon: Gift,
-    title: "🎁 Unlock Hidden Perks",
-    description: "You already have free travel, phone, or rental insurance from your card or employer. We'll show you how to actually use it."
-  },
-  {
-    icon: FileText,
-    title: "📜 Claim Smart",
-    description: "Insurance rules are vague on purpose. We explain what's really covered, what to say, and how to avoid denials — all based on your real policy."
-  }
-];
+import { Gift, FileText } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export const WhatYouGetSection = () => {
+  const { currency } = useLanguage();
+  
+  const benefits = [
+    {
+      icon: "currency" as const,
+      title: "💰 Stop Overpaying",
+      description: "Find duplicate coverage you're paying for twice — and cancel the extra."
+    },
+    {
+      icon: Gift,
+      title: "🎁 Unlock Hidden Perks",
+      description: "You already have free travel, phone, or rental insurance from your card or employer. We'll show you how to actually use it."
+    },
+    {
+      icon: FileText,
+      title: "📜 Claim Smart",
+      description: "Insurance rules are vague on purpose. We explain what's really covered, what to say, and how to avoid denials — all based on your real policy."
+    }
+  ];
+
   return (
     <section className="py-24 bg-background">
       <div className="container mx-auto px-6">
@@ -32,7 +35,11 @@ export const WhatYouGetSection = () => {
           {benefits.map((benefit, index) => (
             <div key={index} className="text-center p-8 rounded-2xl bg-card border shadow-soft hover:shadow-lg transition-all duration-300">
               <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
-                <benefit.icon className="h-8 w-8 text-primary" />
+                {benefit.icon === "currency" ? (
+                  <span className="text-2xl font-bold text-primary">{currency}</span>
+                ) : (
+                  <benefit.icon className="h-8 w-8 text-primary" />
+                )}
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-4">
                 {benefit.title}
