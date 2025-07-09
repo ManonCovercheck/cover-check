@@ -31,7 +31,7 @@ export const InsuranceCategoriesSection = () => {
   };
 
   return (
-    <section className="py-16 bg-background">
+    <section className="py-16 bg-muted/5">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h3 className="text-2xl font-bold text-foreground mb-4">
