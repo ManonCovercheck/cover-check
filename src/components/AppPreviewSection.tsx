@@ -22,63 +22,99 @@ export const AppPreviewSection = () => {
 
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* App Interface Mockup */}
+            {/* Smartphone Mockup */}
             <div className="order-2 lg:order-1">
-              <div className="relative">
-                {/* Phone Frame */}
-                <div className="bg-card rounded-3xl p-6 shadow-elegant border">
-                  <div className="bg-gradient-subtle rounded-2xl p-4">
-                    {/* App Header */}
-                    <div className="flex items-center justify-between mb-6">
-                      <h3 className="text-lg font-bold text-foreground">Coverage Analysis</h3>
-                      <div className="flex items-center gap-2 bg-secondary/10 rounded-full px-3 py-1">
-                        <Shield className="h-4 w-4 text-secondary" />
-                        <span className="text-sm font-medium text-secondary">Complete</span>
-                      </div>
+              <div className="relative max-w-sm mx-auto">
+                {/* iPhone Frame */}
+                <div className="relative bg-gray-900 rounded-[3rem] p-4 shadow-2xl">
+                  {/* Screen Bezel */}
+                  <div className="bg-black rounded-[2.5rem] p-2">
+                    {/* Notch */}
+                    <div className="bg-black h-6 w-32 rounded-b-2xl mx-auto mb-2 relative">
+                      <div className="absolute top-1 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-gray-800 rounded-full"></div>
                     </div>
-
-                    {/* Savings Summary */}
-                    <div className="bg-gradient-primary rounded-xl p-4 mb-6 text-center">
-                      <div className="flex items-center justify-center gap-2 mb-2">
-                        <TrendingDown className="h-5 w-5 text-primary-foreground" />
-                        <span className="text-sm font-medium text-primary-foreground/80">Potential Annual Savings</span>
-                      </div>
-                      <div className="text-3xl font-bold text-primary-foreground">£1,476</div>
-                      <div className="text-sm text-primary-foreground/80">From 4 overlapping policies</div>
-                    </div>
-
-                    {/* Policy List */}
-                    <div className="space-y-3">
-                      {savingsData.map((item, index) => (
-                        <div key={index} className="bg-card rounded-lg p-3 border border-border/50">
-                          <div className="flex items-center justify-between">
-                            <div className="flex-1">
-                              <div className="font-medium text-foreground text-sm">{item.category}</div>
-                              <div className="text-xs text-muted-foreground">{item.overlap}</div>
-                            </div>
-                            <div className="text-right">
-                              <div className="font-bold text-secondary text-sm">{item.savings}</div>
-                              <div className="text-xs text-muted-foreground">saved</div>
-                            </div>
+                    
+                    {/* Screen Content */}
+                    <div className="bg-background rounded-[2rem] overflow-hidden min-h-[600px]">
+                      {/* Status Bar */}
+                      <div className="flex justify-between items-center px-6 py-2 bg-background text-xs">
+                        <span className="font-medium text-foreground">9:41</span>
+                        <div className="flex items-center gap-1">
+                          <div className="w-4 h-2 border border-foreground rounded-sm">
+                            <div className="w-3 h-1 bg-foreground rounded-sm m-0.5"></div>
                           </div>
                         </div>
-                      ))}
-                    </div>
+                      </div>
 
-                    {/* Action Button */}
-                    <div className="mt-6">
-                      <button className="w-full bg-secondary text-secondary-foreground rounded-lg py-3 font-medium text-sm">
-                        Get Detailed Action Plan - £29/year
-                      </button>
+                      {/* App Content */}
+                      <div className="px-4 pb-4">
+                        {/* App Header */}
+                        <div className="flex items-center justify-between mb-6 px-2">
+                          <div>
+                            <h3 className="text-2xl font-bold text-foreground">CoverCheck</h3>
+                            <p className="text-sm text-muted-foreground">Analysis Complete</p>
+                          </div>
+                          <div className="w-10 h-10 bg-gradient-primary rounded-full flex items-center justify-center">
+                            <Shield className="h-5 w-5 text-primary-foreground" />
+                          </div>
+                        </div>
+
+                        {/* Savings Card */}
+                        <div className="bg-gradient-primary rounded-2xl p-6 mb-6 text-center">
+                          <div className="flex items-center justify-center gap-2 mb-3">
+                            <TrendingDown className="h-5 w-5 text-primary-foreground" />
+                            <span className="text-sm font-medium text-primary-foreground/90">Annual Savings Found</span>
+                          </div>
+                          <div className="text-4xl font-bold text-primary-foreground mb-2">£1,476</div>
+                          <div className="text-sm text-primary-foreground/80">From 4 overlapping policies</div>
+                          <div className="mt-4 bg-white/20 rounded-full px-4 py-2 inline-block">
+                            <span className="text-sm font-medium text-primary-foreground">49% reduction</span>
+                          </div>
+                        </div>
+
+                        {/* Policy Breakdown */}
+                        <div className="space-y-3 mb-6">
+                          <h4 className="font-semibold text-foreground px-2">Coverage Overlaps Found</h4>
+                          {savingsData.map((item, index) => (
+                            <div key={index} className="bg-card rounded-xl p-4 border border-border/50 shadow-sm">
+                              <div className="flex items-center justify-between">
+                                <div className="flex-1">
+                                  <div className="font-medium text-foreground">{item.category}</div>
+                                  <div className="text-sm text-muted-foreground mt-1">{item.overlap}</div>
+                                </div>
+                                <div className="text-right bg-secondary/10 rounded-lg px-3 py-2">
+                                  <div className="font-bold text-secondary">{item.savings}</div>
+                                  <div className="text-xs text-muted-foreground">saved</div>
+                                </div>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+
+                        {/* Action Buttons */}
+                        <div className="space-y-3 px-2">
+                          <button className="w-full bg-secondary text-secondary-foreground rounded-xl py-4 font-semibold text-center shadow-sm">
+                            Get Full Action Plan - £29/year
+                          </button>
+                          <button className="w-full border border-border text-muted-foreground rounded-xl py-3 font-medium text-center">
+                            Share with Family
+                          </button>
+                        </div>
+                      </div>
+
+                      {/* Home Indicator */}
+                      <div className="flex justify-center pb-2">
+                        <div className="w-32 h-1 bg-gray-400 rounded-full"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
 
                 {/* Floating Elements */}
-                <div className="absolute -top-4 -right-4 bg-secondary text-secondary-foreground rounded-full p-3 shadow-lg">
+                <div className="absolute -top-6 -right-6 bg-secondary text-secondary-foreground rounded-full p-4 shadow-xl">
                   <Calculator className="h-6 w-6" />
                 </div>
-                <div className="absolute -bottom-4 -left-4 bg-primary text-primary-foreground rounded-full p-3 shadow-lg">
+                <div className="absolute -bottom-6 -left-6 bg-primary text-primary-foreground rounded-full p-4 shadow-xl">
                   <DollarSign className="h-6 w-6" />
                 </div>
               </div>
