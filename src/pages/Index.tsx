@@ -14,13 +14,13 @@ const Index = () => {
     <div className="min-h-screen">
       <HeroSection />
       <div>
-        <div className="bg-white">
+        <div className="bg-white py-12">
           <WhatYouGetSection />
         </div>
-        <div className="bg-muted/50 -mt-8">
+        <div className="bg-muted/50 py-12">
           <AppPreviewSection />
         </div>
-        <div className="bg-muted/50 pt-8 pb-2">
+        <div className="bg-muted/50 py-8">
           <div className="container mx-auto px-6">
             <div className="text-center">
               <button
@@ -35,19 +35,19 @@ const Index = () => {
             </div>
           </div>
         </div>
-        <div className="bg-white -mt-1">
+        <div className="bg-white py-12">
           <InsuranceQuizSection />
         </div>
-        <div className="bg-muted/50 -mt-8">
+        <div className="bg-muted/50 py-12">
           <OverlappingSection />
         </div>
-        <div className="bg-white -mt-8">
+        <div className="bg-white py-12">
           <SmartClaimSection />
         </div>
-        <div className="bg-muted/50 -mt-8">
+        <div className="bg-muted/50 py-12">
           <CoverSection />
         </div>
-        <div className="bg-white -mt-8">
+        <div className="bg-white py-12">
           <PerksSection />
         </div>
       </div>
