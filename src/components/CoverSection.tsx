@@ -15,7 +15,7 @@ export const CoverSection = () => {
           <div className="mb-8">
             <Shield className="h-16 w-16 text-primary mx-auto mb-6" />
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              🛡️ Your Complete Coverage
+              Your Complete Coverage
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               See all your insurance coverage in one place — from credit cards, employers, and policies you've purchased.

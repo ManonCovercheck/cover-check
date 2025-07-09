@@ -12,7 +12,7 @@ export const OverlappingSection = () => {
               <span className="text-3xl font-bold text-primary">{currency}</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              💰 Stop Overpaying
+              Stop Overpaying
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Find duplicate coverage you're paying for twice — and cancel the extra.

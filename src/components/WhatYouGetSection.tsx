@@ -7,17 +7,17 @@ export const WhatYouGetSection = () => {
   const benefits = [
     {
       icon: "currency" as const,
-      title: "💰 Stop Overpaying",
+      title: "Stop Overpaying",
       description: "Find duplicate coverage you're paying for twice — and cancel the extra."
     },
     {
       icon: Gift,
-      title: "🎁 Unlock Hidden Perks",
+      title: "Unlock Hidden Perks",
       description: "You already have free travel, phone, or rental insurance from your card or employer. We'll show you how to actually use it."
     },
     {
       icon: FileText,
-      title: "📜 Smart Claim",
+      title: "Smart Claim",
       description: "Insurance rules are vague on purpose. We explain what's really covered, what to say, and how to avoid denials — all based on your real policy."
     }
   ];

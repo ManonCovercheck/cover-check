@@ -38,7 +38,7 @@ export const PerksSection = () => {
           <div className="mb-8">
             <Gift className="h-16 w-16 text-primary mx-auto mb-6" />
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              🎁 Unlock Hidden Perks
+              Unlock Hidden Perks
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               You already have free travel, phone, or rental insurance from your card or employer. We'll show you how to actually use it.
