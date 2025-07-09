@@ -20,7 +20,7 @@ const Index = () => {
         <div className="bg-muted/50 -mt-8">
           <AppPreviewSection />
         </div>
-        <div className="bg-muted/50 py-2">
+        <div className="bg-muted/50 pt-8 pb-2">
           <div className="container mx-auto px-6">
             <div className="text-center">
               <button
