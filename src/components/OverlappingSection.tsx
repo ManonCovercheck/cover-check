@@ -8,7 +8,9 @@ export const OverlappingSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
-            <DollarSign className="h-16 w-16 text-primary mx-auto mb-6" />
+            <div className="h-16 w-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+              <span className="text-3xl font-bold text-primary">{currency}</span>
+            </div>
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               💰 Stop Overpaying
             </h2>
