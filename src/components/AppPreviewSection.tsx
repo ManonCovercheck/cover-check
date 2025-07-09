@@ -109,14 +109,6 @@ export const AppPreviewSection = () => {
                     </div>
                   </div>
                 </div>
-
-                {/* Floating Elements */}
-                <div className="absolute -top-6 -right-6 bg-secondary text-secondary-foreground rounded-full p-4 shadow-xl">
-                  <Calculator className="h-6 w-6" />
-                </div>
-                <div className="absolute -bottom-6 -left-6 bg-primary text-primary-foreground rounded-full p-4 shadow-xl">
-                  <DollarSign className="h-6 w-6" />
-                </div>
               </div>
             </div>
 

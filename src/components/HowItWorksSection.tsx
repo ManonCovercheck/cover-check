@@ -40,7 +40,7 @@ export const HowItWorksSection = () => {
                 <div className="hidden md:block absolute top-12 left-full w-full h-0.5 bg-border z-0 transform -translate-x-1/2" />
               )}
               
-              <div className="relative bg-card rounded-2xl p-8 shadow-card hover:shadow-glow transition-all duration-300 text-center">
+              <div className="relative bg-card rounded-2xl p-8 shadow-card hover:shadow-glow transition-all duration-300 text-center h-full flex flex-col">
                 {/* Step Number */}
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-bold">
                   {index + 1}
@@ -54,8 +54,10 @@ export const HowItWorksSection = () => {
                 </div>
 
                 {/* Content */}
-                <h3 className="text-xl font-bold text-foreground mb-4">{step.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{step.description}</p>
+                <div className="flex-1 flex flex-col">
+                  <h3 className="text-xl font-bold text-foreground mb-4">{step.title}</h3>
+                  <p className="text-muted-foreground leading-relaxed flex-1">{step.description}</p>
+                </div>
               </div>
             </div>
           ))}

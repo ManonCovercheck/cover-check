@@ -26,13 +26,13 @@ export const InsuranceCategoriesSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-9 gap-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 max-w-4xl mx-auto">
           {categories.map((category, index) => (
-            <div key={index} className="flex flex-col items-center group">
-              <div className="w-16 h-16 bg-muted rounded-2xl flex items-center justify-center mb-3 group-hover:bg-primary/10 transition-colors duration-300">
-                <category.icon className={`h-8 w-8 ${category.color} group-hover:scale-110 transition-transform duration-300`} />
+            <div key={index} className="flex flex-col items-center group p-4">
+              <div className="w-14 h-14 bg-muted rounded-xl flex items-center justify-center mb-3 group-hover:bg-primary/10 transition-colors duration-300">
+                <category.icon className={`h-6 w-6 ${category.color} group-hover:scale-110 transition-transform duration-300`} />
               </div>
-              <span className="text-sm font-medium text-foreground">{category.name}</span>
+              <span className="text-xs font-medium text-foreground text-center">{category.name}</span>
             </div>
           ))}
         </div>
