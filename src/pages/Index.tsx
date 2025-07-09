@@ -4,6 +4,7 @@ import { OverlappingSection } from "@/components/OverlappingSection";
 import { SmartClaimSection } from "@/components/SmartClaimSection";
 import { CoverSection } from "@/components/CoverSection";
 import { PerksSection } from "@/components/PerksSection";
+import { InsuranceCategoriesSection } from "@/components/InsuranceCategoriesSection";
 import { AppPreviewSection } from "@/components/AppPreviewSection";
 import { FooterSection } from "@/components/FooterSection";
 
@@ -16,6 +17,7 @@ const Index = () => {
       <SmartClaimSection />
       <CoverSection />
       <PerksSection />
+      <InsuranceCategoriesSection />
       <AppPreviewSection />
       <FooterSection />
     </div>
