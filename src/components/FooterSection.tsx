@@ -23,11 +23,8 @@ export const FooterSection = () => {
       {/* Final CTA Section */}
       <div className="py-20">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready to Uncover Your Savings?
-          </h2>
           <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-            Join the waitlist and be among the first to discover potential savings with our free analysis. Unlock detailed action plans for £29/year.
+            We don't sell insurance. We help you finally benefit from it.
           </p>
           
           <Button
@@ -36,7 +33,7 @@ export const FooterSection = () => {
             size="lg"
             className="text-lg px-8 py-4 h-auto mb-6"
           >
-            Start Your Free Analysis
+            🟢 Get My Free Report
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
           

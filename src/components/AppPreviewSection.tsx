@@ -105,7 +105,7 @@ export const AppPreviewSection = () => {
                             onClick={handleGetActionPlan}
                             className="w-full bg-secondary text-secondary-foreground rounded-xl py-3 font-semibold text-center shadow-sm hover:bg-secondary/90 transition-colors"
                           >
-                            Get Full Plan - £29/year
+                            🟢 Start My Free Scan
                           </button>
                           <button 
                             onClick={handleShareAnalysis}

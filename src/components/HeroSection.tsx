@@ -30,15 +30,15 @@ export const HeroSection = () => {
 
           {/* Main Headline */}
           <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
-            Stop Paying for
+            💸 You're Covered.
             <span className="block bg-gradient-to-r from-secondary to-secondary-light bg-clip-text text-transparent">
-              Insurance You Don't Need
+              But Are You Benefiting?
             </span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Get a free analysis of your insurance policies and discover potential savings.
+            CoverCheck scans your insurance coverage to help you stop overpaying, unlock unused perks, and file smarter claims — all in one place.
           </p>
 
           {/* Key Benefits */}
@@ -63,7 +63,7 @@ export const HeroSection = () => {
               size="lg"
               className="text-lg px-8 py-4 h-auto"
             >
-              Get Your Free Insurance Analysis
+              🟢 Start Your Free Coverage Scan
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>
