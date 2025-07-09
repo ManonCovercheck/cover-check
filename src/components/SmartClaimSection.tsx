@@ -9,7 +9,7 @@ export const SmartClaimSection = () => {
           <div className="mb-8">
             <FileText className="h-16 w-16 text-primary mx-auto mb-6" />
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              📜 Claim Smart
+              📜 Smart Claim
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Insurance rules are vague on purpose. We explain what's really covered, what to say, and how to avoid denials — all based on your real policy.

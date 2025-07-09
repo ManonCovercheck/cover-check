@@ -146,12 +146,22 @@ export const AppPreviewSection = () => {
     <section className="py-8">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
+          {/* Title Above Phone */}
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+              See Everything in One App
+            </h2>
+            <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">
+              Get instant insights into your insurance coverage, identify overlaps, discover hidden perks, and make smarter claims with our comprehensive coverage dashboard.
+            </p>
+          </div>
+          
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             {/* Left Side - Phone Mockup */}
             <div className="relative mx-auto w-72 lg:order-1">
               {/* Phone Frame */}
               <div className="bg-gray-900 rounded-[2.5rem] p-2 shadow-phone border border-gray-800 backdrop-blur-sm">
-                <div className="bg-black rounded-[2rem] overflow-hidden h-[650px]">
+                <div className="bg-black rounded-[2rem] overflow-hidden h-[550px]">
                   {/* Status Bar */}
                   <div className="bg-black text-white px-6 py-2 flex justify-between items-center text-sm">
                     <span>9:41</span>
@@ -192,8 +202,8 @@ export const AppPreviewSection = () => {
                   </div>
 
                   {/* Tab Content */}
-                  <div className="bg-white h-[380px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
-                    <div className="min-h-[400px]">
+                  <div className="bg-white h-[280px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
+                    <div className="min-h-[300px]">
                       {getTabContent()}
                     </div>
                   </div>
@@ -201,17 +211,8 @@ export const AppPreviewSection = () => {
               </div>
             </div>
 
-            {/* Right Side - Text Content */}
+            {/* Right Side - Feature Highlights */}
             <div className="space-y-6 lg:order-2">
-              <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                  See Everything in One App
-                </h2>
-                <p className="text-lg text-muted-foreground mb-6">
-                  Get instant insights into your insurance coverage, identify overlaps, discover hidden perks, and make smarter claims with our comprehensive coverage dashboard.
-                </p>
-              </div>
-              
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center">

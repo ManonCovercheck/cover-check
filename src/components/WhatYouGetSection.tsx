@@ -17,7 +17,7 @@ export const WhatYouGetSection = () => {
     },
     {
       icon: FileText,
-      title: "📜 Claim Smart",
+      title: "📜 Smart Claim",
       description: "Insurance rules are vague on purpose. We explain what's really covered, what to say, and how to avoid denials — all based on your real policy."
     }
   ];
