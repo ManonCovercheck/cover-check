@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { DollarSign, Gift, FileText, ArrowRight, CheckCircle, Shield } from "lucide-react";
+import { DollarSign, Gift, FileText, ArrowRight, CheckCircle, Shield, XCircle } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 export const AppPreviewSection = () => {
@@ -66,14 +66,14 @@ export const AppPreviewSection = () => {
                   <span>Police report within 48h</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4 text-green-500" />
-                  <span>Photos of damage required</span>
+                  <XCircle className="h-4 w-4 text-red-500" />
+                  <span>Not covered if stolen on table at bar</span>
                 </div>
               </div>
             </div>
             <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3">
               <div className="text-sm font-medium text-yellow-800">💡 Pro Tip</div>
-              <div className="text-xs text-yellow-600">Take photos before traveling</div>
+              <div className="text-xs text-yellow-600">Always secure items in zipped bags</div>
             </div>
             <Button className="w-full" variant="outline">
               <FileText className="mr-2 h-4 w-4" />
@@ -87,13 +87,13 @@ export const AppPreviewSection = () => {
             <h4 className="font-semibold text-foreground mb-4">Your Coverage</h4>
             <div className="space-y-3">
               {[
-                { type: "Phone Insurance", status: "Active", color: "green", premium: `${currency}12/mo` },
-                { type: "Travel Protection", status: "Active", color: "green", premium: `${currency}8/mo` },
-                { type: "Rental Car", status: "Available", color: "blue", premium: `${currency}15/mo` },
-                { type: "Dental Protection", status: "Missing", color: "red", premium: `${currency}25/mo` }
+                { type: "Phone Insurance", status: "Covered", color: "green" },
+                { type: "Travel Protection", status: "Covered", color: "green" },
+                { type: "Rental Car", status: "Covered", color: "blue" },
+                { type: "Dental Protection", status: "Missing", color: "red" }
               ].map((item, index) => (
                 <div key={index} className="p-3 bg-muted/50 rounded-lg">
-                  <div className="flex items-center justify-between mb-1">
+                  <div className="flex items-center justify-between">
                     <span className="text-foreground font-medium text-sm">{item.type}</span>
                      <span className={`text-xs px-2 py-1 rounded-full ${
                         item.color === 'green' ? 'bg-green-100 text-green-700' :
@@ -104,7 +104,6 @@ export const AppPreviewSection = () => {
                        {item.status}
                      </span>
                   </div>
-                  <div className="text-xs text-muted-foreground">{item.premium}</div>
                 </div>
               ))}
             </div>
