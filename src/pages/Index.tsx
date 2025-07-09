@@ -14,7 +14,7 @@ const Index = () => {
     <div className="min-h-screen">
       <HeroSection />
       <div>
-        <div className="bg-white py-12">
+        <div className="bg-white py-8">
           <WhatYouGetSection />
         </div>
         <div className="bg-muted/50 py-12">

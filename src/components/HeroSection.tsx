@@ -25,7 +25,7 @@ export const HeroSection = () => {
       
       <div className="container mx-auto px-6 relative z-10">
         {/* Language Switcher */}
-        <div className="absolute top-2 right-2 z-20">
+        <div className="fixed top-2 right-2 z-50">
           <LanguageSwitcher />
         </div>
         
