@@ -4,12 +4,13 @@ import { OverlappingSection } from "@/components/OverlappingSection";
 import { SmartClaimSection } from "@/components/SmartClaimSection";
 import { CoverSection } from "@/components/CoverSection";
 import { PerksSection } from "@/components/PerksSection";
-
 import { InsuranceQuizSection } from "@/components/InsuranceQuizSection";
 import { AppPreviewSection } from "@/components/AppPreviewSection";
 import { FooterSection } from "@/components/FooterSection";
+import { useNavigate } from "react-router-dom";
 
 const Index = () => {
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen">
       <HeroSection />
@@ -24,7 +25,7 @@ const Index = () => {
           <div className="container mx-auto px-6">
             <div className="text-center">
               <button
-                onClick={() => window.location.href = "/login"}
+                onClick={() => navigate("/login")}
                 className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-4 rounded-lg font-medium transition-colors inline-flex items-center gap-2"
               >
                 Commencer Votre Scan Gratuit
