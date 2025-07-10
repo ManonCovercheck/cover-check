@@ -1,4 +1,4 @@
-import { Heart, Plane, Smartphone, PawPrint, Home, Car, Briefcase, CreditCard, Shield } from "lucide-react";
+import { Heart, Plane, Smartphone, PawPrint, Home, Car, Briefcase, CreditCard, Shield, Cpu, MoreHorizontal } from "lucide-react";
 import { useState } from "react";
 
 export const InsuranceCategoriesSection = () => {
@@ -21,7 +21,9 @@ export const InsuranceCategoriesSection = () => {
     { icon: Car, name: "Rental Car", color: "text-yellow-500" },
     { icon: Briefcase, name: "Disability", color: "text-red-400" },
     { icon: Home, name: "Renters", color: "text-green-400" },
-    { icon: Shield, name: "Liability", color: "text-purple-400" }
+    { icon: Shield, name: "Liability", color: "text-purple-400" },
+    { icon: Cpu, name: "Tech", color: "text-cyan-500" },
+    { icon: MoreHorizontal, name: "Others", color: "text-slate-500" }
   ];
 
   const displayedCategories = showMore ? [...baseCategories, ...additionalCategories] : baseCategories;
