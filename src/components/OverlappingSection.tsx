@@ -2,7 +2,7 @@ import { DollarSign, AlertTriangle } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 export const OverlappingSection = () => {
-  const { currency } = useLanguage();
+  const { currency, t } = useLanguage();
   return (
     <section className="py-8">
       <div className="container mx-auto px-6">
@@ -12,10 +12,10 @@ export const OverlappingSection = () => {
               <span className="text-3xl font-bold text-primary">{currency}</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Stop Overpaying
+              {t('app.features.stop.title')}
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Find duplicate coverage you're paying for twice — and cancel the extra.
+              {t('app.features.stop.desc')}
             </p>
           </div>
 

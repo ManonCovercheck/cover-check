@@ -8,9 +8,11 @@ import { InsuranceQuizSection } from "@/components/InsuranceQuizSection";
 import { AppPreviewSection } from "@/components/AppPreviewSection";
 import { FooterSection } from "@/components/FooterSection";
 import { useNavigate } from "react-router-dom";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Index = () => {
   const navigate = useNavigate();
+  const { t } = useLanguage();
   return (
     <div className="min-h-screen">
       <HeroSection />
@@ -28,7 +30,7 @@ const Index = () => {
                 onClick={() => navigate("/login")}
                 className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-4 rounded-lg font-medium transition-colors inline-flex items-center gap-2"
               >
-                Commencer Votre Scan Gratuit
+                {t('hero.cta')}
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
