@@ -1,4 +1,4 @@
-import { Gift, CreditCard, Building, Sparkles } from "lucide-react";
+import { Gift, CreditCard, Building, Sparkles, Cpu, MoreHorizontal } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -28,6 +28,22 @@ export const PerksSection = () => {
       description: "90-day protection against theft, damage, and defects",
       icon: Sparkles,
       color: "green"
+    },
+    {
+      title: "Tech Insurance",
+      source: "Device Protection",
+      value: `${currency}150/year`,
+      description: "Coverage for smartphones, laptops, and electronics",
+      icon: Cpu,
+      color: "blue"
+    },
+    {
+      title: "Other Benefits",
+      source: "Various Sources",
+      value: `${currency}120/year`,
+      description: "Additional perks and coverage options available",
+      icon: MoreHorizontal,
+      color: "purple"
     }
   ];
 
@@ -48,7 +64,7 @@ export const PerksSection = () => {
           <div className="bg-card rounded-3xl p-8 md:p-12 shadow-soft border">
             <div className="bg-green-50 border border-green-200 rounded-xl p-6 mb-8">
               <h3 className="text-2xl font-bold text-green-800 mb-2">
-                Found {currency}680 in Unused Benefits
+                Found {currency}950 in Unused Benefits
               </h3>
               <p className="text-green-600">These perks are already included with your existing accounts</p>
             </div>
