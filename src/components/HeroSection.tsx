@@ -33,7 +33,7 @@ export const HeroSection = () => {
           {/* Main Headline */}
           <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
             {t('hero.title1')}
-            <span className="block bg-gradient-to-r from-secondary to-secondary-light bg-clip-text text-transparent">
+            <span className="block text-secondary leading-tight">
               {t('hero.title2')}
             </span>
           </h1>
