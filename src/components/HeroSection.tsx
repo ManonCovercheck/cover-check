@@ -1,14 +1,16 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Shield, CheckCircle } from "lucide-react";
+import { ArrowRight, Shield, CheckCircle, LogIn } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { Link, useNavigate } from "react-router-dom";
 
 export const HeroSection = () => {
   const { t } = useLanguage();
+  const navigate = useNavigate();
   const handleStartScan = () => {
-    window.open("https://tally.so/r/mY4XZq", "_blank");
+    navigate("/login");
   };
 
   return (
@@ -24,8 +26,14 @@ export const HeroSection = () => {
       />
       
       <div className="container mx-auto px-6 relative z-10">
-        {/* Language Switcher */}
-        <div className="fixed top-2 right-2 z-50">
+        {/* Top Navigation */}
+        <div className="fixed top-2 right-2 z-50 flex items-center gap-2">
+          <Link to="/login">
+            <Button variant="ghost" size="sm" className="text-primary-foreground/80 hover:text-primary-foreground hover:bg-background/10">
+              <LogIn className="h-4 w-4 mr-2" />
+              Login
+            </Button>
+          </Link>
           <LanguageSwitcher />
         </div>
         

@@ -24,7 +24,7 @@ const Index = () => {
           <div className="container mx-auto px-6">
             <div className="text-center">
               <button
-                onClick={() => window.open("https://tally.so/r/mY4XZq", "_blank")}
+                onClick={() => window.location.href = "/login"}
                 className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-4 rounded-lg font-medium transition-colors inline-flex items-center gap-2"
               >
                 Commencer Votre Scan Gratuit
