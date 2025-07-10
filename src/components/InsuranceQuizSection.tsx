@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Heart, Plane, Smartphone, PawPrint, Home, Car, Briefcase, CreditCard, Shield, CheckCircle, ArrowRight, DollarSign, Gift, AlertTriangle, Umbrella } from "lucide-react";
+import { Heart, Plane, Smartphone, PawPrint, Home, Car, Briefcase, CreditCard, Shield, CheckCircle, ArrowRight, DollarSign, Gift, AlertTriangle, Umbrella, Cpu, MoreHorizontal } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 export const InsuranceQuizSection = () => {
@@ -23,7 +23,9 @@ export const InsuranceQuizSection = () => {
     { id: "rental", name: t('insurance.rental'), icon: Car, savings: 95, perks: 2, color: "text-yellow-500" },
     { id: "disability", name: t('insurance.disability'), icon: Briefcase, savings: 110, perks: 3, color: "text-pink-400" },
     { id: "renters", name: t('insurance.renters'), icon: Home, savings: 85, perks: 2, color: "text-green-400" },
-    { id: "liability", name: t('insurance.liability'), icon: Shield, savings: 70, perks: 1, color: "text-purple-600" }
+    { id: "liability", name: t('insurance.liability'), icon: Shield, savings: 70, perks: 1, color: "text-purple-600" },
+    { id: "tech", name: "Tech", icon: Cpu, savings: 90, perks: 2, color: "text-cyan-500" },
+    { id: "others", name: "Others", icon: MoreHorizontal, savings: 50, perks: 1, color: "text-slate-500" }
   ];
 
   const handleInsuranceToggle = (insuranceId: string) => {
