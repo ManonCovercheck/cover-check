@@ -12,7 +12,9 @@ export const InsuranceCategoriesSection = () => {
     { icon: Home, name: "Home", color: "text-green-500" },
     { icon: Car, name: "Auto", color: "text-indigo-500" },
     { icon: CreditCard, name: "Credit Card", color: "text-pink-500" },
-    { icon: Briefcase, name: "Life", color: "text-gray-600" }
+    { icon: Briefcase, name: "Life", color: "text-gray-600" },
+    { icon: Cpu, name: "Tech", color: "text-cyan-500" },
+    { icon: MoreHorizontal, name: "Others", color: "text-slate-500" }
   ];
 
   const additionalCategories = [
@@ -21,9 +23,7 @@ export const InsuranceCategoriesSection = () => {
     { icon: Car, name: "Rental Car", color: "text-yellow-500" },
     { icon: Briefcase, name: "Disability", color: "text-red-400" },
     { icon: Home, name: "Renters", color: "text-green-400" },
-    { icon: Shield, name: "Liability", color: "text-purple-400" },
-    { icon: Cpu, name: "Tech", color: "text-cyan-500" },
-    { icon: MoreHorizontal, name: "Others", color: "text-slate-500" }
+    { icon: Shield, name: "Liability", color: "text-purple-400" }
   ];
 
   const displayedCategories = showMore ? [...baseCategories, ...additionalCategories] : baseCategories;
