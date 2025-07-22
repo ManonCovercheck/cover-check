@@ -13,7 +13,7 @@ const Index = () => {
   const { t } = useLanguage();
   
   const handleStartScan = () => {
-    window.open("https://tally.so/r/mY4XZq", "_blank");
+    window.open("https://tally.so/r/3N2ayp", "_blank");
   };
 
   return (

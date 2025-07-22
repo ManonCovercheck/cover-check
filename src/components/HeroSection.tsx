@@ -10,7 +10,7 @@ export const HeroSection = () => {
   const { t } = useLanguage();
   const navigate = useNavigate();
   const handleStartScan = () => {
-    navigate("/login");
+    window.open("https://tally.so/r/3N2ayp", "_blank");
   };
 
   return (
@@ -28,12 +28,15 @@ export const HeroSection = () => {
       <div className="container mx-auto px-6 relative z-10">
         {/* Top Navigation */}
         <div className="fixed top-2 right-2 z-50 flex items-center gap-2">
-          <Link to="/login">
-            <Button variant="ghost" size="sm" className="text-primary-foreground/80 hover:text-primary-foreground hover:bg-background/10">
-              <LogIn className="h-4 w-4 mr-2" />
-              Login
-            </Button>
-          </Link>
+          <Button 
+            variant="ghost" 
+            size="sm" 
+            className="text-primary-foreground/80 hover:text-primary-foreground hover:bg-background/10"
+            onClick={() => window.open("https://tally.so/r/3N2ayp", "_blank")}
+          >
+            <LogIn className="h-4 w-4 mr-2" />
+            Login
+          </Button>
           <LanguageSwitcher />
         </div>
         

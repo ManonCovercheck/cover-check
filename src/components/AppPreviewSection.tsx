@@ -7,7 +7,7 @@ export const AppPreviewSection = () => {
   const { t, currency } = useLanguage();
   const [activeTab, setActiveTab] = useState("overlapping");
   const handleStartScan = () => {
-    window.open("https://tally.so/r/mY4XZq", "_blank");
+    window.open("https://tally.so/r/3N2ayp", "_blank");
   };
 
   const tabs = [
