@@ -1,9 +1,11 @@
 import { FileText, CheckCircle, XCircle, AlertCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useNavigate } from "react-router-dom";
 
 export const SmartClaimSection = () => {
-  const navigate = useNavigate();
+  const handleStartScan = () => {
+    window.open("https://tally.so/r/mY4XZq", "_blank");
+  };
+
   return (
     <section className="py-8">
       <div className="container mx-auto px-6">
@@ -60,7 +62,7 @@ export const SmartClaimSection = () => {
                     <div className="text-blue-600 text-sm">Claims approved when following our guides</div>
                   </div>
                 </div>
-                <Button className="w-full" size="lg" onClick={() => navigate("/login")}>
+                <Button className="w-full" size="lg" onClick={handleStartScan}>
                   <FileText className="mr-2 h-5 w-5" />
                   Start My Free Scan
                 </Button>
