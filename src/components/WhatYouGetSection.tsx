@@ -47,11 +47,6 @@ export const WhatYouGetSection = () => {
               <p className="text-muted-foreground leading-relaxed">
                 {benefit.description}
               </p>
-              {benefit.icon === FileText && (
-                <p className="text-sm text-red-600 font-medium mt-2">
-                  As claims fail, we help you with Smart Claim.
-                </p>
-              )}
             </div>
           ))}
         </div>
