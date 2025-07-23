@@ -49,7 +49,7 @@ export const WhatYouGetSection = () => {
               </p>
               {benefit.icon === FileText && (
                 <p className="text-sm text-red-600 font-medium mt-2">
-                  Most insurance claims fail.
+                  As claims fail, we help you with Smart Claim.
                 </p>
               )}
             </div>
