@@ -29,7 +29,7 @@ const translations = {
     'whatyouget.unlock.title': 'Unlock Hidden Perks',
     'whatyouget.unlock.description': 'You already have free travel, phone, or rental insurance from your card or employer. We\'ll show you how to actually use it.',
     'whatyouget.smart.title': 'Smart Claim',
-    'whatyouget.smart.description': 'Insurance rules are vague on purpose. We explain what\'s really covered, what to say, and how to avoid denials — all based on your real policy.',
+    'whatyouget.smart.description': 'Most insurance claims fail, rules are vague on purpose. We explain what\'s really covered, what to say, and how to avoid denials — all based on your real policy.',
 
     // App Preview
     'app.title': 'See Everything in One App',
@@ -149,7 +149,7 @@ const translations = {
     'whatyouget.unlock.title': 'Débloquer les Avantages Cachés',
     'whatyouget.unlock.description': 'Vous avez déjà une assurance voyage, téléphone, ou location gratuite via votre carte ou employeur. Nous vous montrerons comment l\'utiliser réellement.',
     'whatyouget.smart.title': 'Réclamation Intelligente',
-    'whatyouget.smart.description': 'Les règles d\'assurance sont vagues à dessein. Nous expliquons ce qui est vraiment couvert, quoi dire, et comment éviter les refus — tout basé sur votre vraie police.',
+    'whatyouget.smart.description': 'La plupart des réclamations d\'assurance échouent, les règles sont vagues à dessein. Nous expliquons ce qui est vraiment couvert, quoi dire, et comment éviter les refus — tout basé sur votre vraie police.',
 
     // App Preview
     'app.title': 'Voir Tout dans Une App',
