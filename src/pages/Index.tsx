@@ -1,5 +1,6 @@
 import { HeroSection } from "@/components/HeroSection";
 import { WhatYouGetSection } from "@/components/WhatYouGetSection";
+import { HowItWorksSection } from "@/components/HowItWorksSection";
 import { OverlappingSection } from "@/components/OverlappingSection";
 import { SmartClaimSection } from "@/components/SmartClaimSection";
 import { CoverSection } from "@/components/CoverSection";
@@ -24,6 +25,9 @@ const Index = () => {
           <WhatYouGetSection />
         </div>
         <div className="bg-muted/50 py-12">
+          <HowItWorksSection />
+        </div>
+        <div className="bg-white py-12">
           <AppPreviewSection />
         </div>
         <div className="bg-muted/50 py-8">

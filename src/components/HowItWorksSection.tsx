@@ -1,22 +1,27 @@
 
-import { Upload, Search, PiggyBank } from "lucide-react";
+import { FileText, Building, Package, MapPin } from "lucide-react";
 
 export const HowItWorksSection = () => {
   const steps = [
     {
-      icon: Upload,
-      title: "Upload Your Policies",
-      description: "Snap photos or upload PDFs of all your insurance documents. We handle health, travel, phone, pet, home, and auto policies."
+      icon: FileText,
+      title: "Type of Insurance",
+      description: "Health, Home, Pet, Travel, Car, etc."
     },
     {
-      icon: Search,
-      title: "Free AI Analysis",
-      description: "Our smart technology scans for overlapping coverage, gaps, and potential savings opportunities across all your policies."
+      icon: Building,
+      title: "Provider Name",
+      description: "e.g. AXA, Aviva, Revolut, Amex, etc."
     },
     {
-      icon: PiggyBank,
-      title: "Get Detailed Savings Plan",
-      description: "Receive a free overview of potential savings. Unlock detailed recommendations and step-by-step action plan for £29/year."
+      icon: Package,
+      title: "Package/Tier",
+      description: "Your specific plan or coverage level"
+    },
+    {
+      icon: MapPin,
+      title: "Country",
+      description: "For legal terms and regulations"
     }
   ];
 
@@ -25,14 +30,14 @@ export const HowItWorksSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            How CoverCheck Works
+            How It Works
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Free analysis first, then unlock detailed savings plan
+            You only need to share these 4 simple details:
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
           {steps.map((step, index) => (
             <div key={index} className="relative">
               {/* Step Connection Line */}
