@@ -16,7 +16,7 @@ export const SmartClaimSection = () => {
               Smart Claim
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Most insurance claim fail, rules are vague on purpose. We explain what's really covered simply and how to avoid denials — all based on your real policy.
+              Most insurance claims fail, rules are vague on purpose. We explain what's really covered simply and how to avoid denials — all based on your real policy.
             </p>
           </div>
 
