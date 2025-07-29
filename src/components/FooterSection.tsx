@@ -87,7 +87,7 @@ export const FooterSection = () => {
           {/* Bottom Bar */}
           <div className="border-t border-primary-foreground/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-primary-foreground/60 text-sm">
-              {t('footer.copyright')}
+              © 2025 CoverCheck. All rights reserved.
             </p>
             <div className="flex items-center gap-2 text-primary-foreground/60 text-sm">
               <MapPin className="h-4 w-4" />
