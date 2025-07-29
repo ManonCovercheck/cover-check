@@ -88,8 +88,8 @@ const PrivacyPolicy = () => {
   const currentContent = content[language];
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="container mx-auto px-6 py-8 max-w-4xl">
+    <div className="min-h-screen bg-background flex items-center justify-center">
+      <div className="container mx-auto px-6 py-8 max-w-2xl text-center">
         <div className="mb-8">
           <Link to="/">
             <Button variant="ghost" className="mb-4">
@@ -97,27 +97,18 @@ const PrivacyPolicy = () => {
               Back to Home
             </Button>
           </Link>
-          <h1 className="text-4xl font-bold text-foreground mb-2">{currentContent.title}</h1>
-          <p className="text-muted-foreground">{currentContent.lastUpdated}</p>
         </div>
 
-        <div className="prose prose-lg max-w-none space-y-8">
-          {Object.entries(currentContent.sections).map(([key, section]) => (
-            <section key={key} className="space-y-4">
-              <h2 className="text-2xl font-semibold text-foreground">{section.title}</h2>
-              <p className="text-foreground/80 leading-relaxed">{section.content}</p>
-            </section>
-          ))}
-        </div>
-
-        <div className="mt-12 pt-8 border-t border-border">
-          <div className="text-center">
-            <p className="text-muted-foreground mb-4">
-              Have questions about our privacy practices?
-            </p>
+        <div className="space-y-6">
+          <h1 className="text-5xl font-bold text-foreground">Coming Soon</h1>
+          <p className="text-xl text-muted-foreground">
+            Our Privacy Policy is currently being finalized. 
+            We're working hard to provide you with comprehensive information about how we protect your data.
+          </p>
+          <div className="mt-8">
             <Link to="/">
-              <Button>
-                Contact Support
+              <Button size="lg">
+                Return to Home
               </Button>
             </Link>
           </div>
