@@ -41,7 +41,7 @@ export const AppPreviewSection = () => {
                 <span className="bg-orange-500 text-white text-xs px-2 py-1 rounded-full">x2</span>
               </div>
               <div className="flex items-center justify-between p-3 bg-blue-50 rounded-lg">
-                <span className="text-foreground">Assurance Santé</span>
+                <span className="text-foreground">{t('insurance.health')} Insurance</span>
                 <span className="bg-yellow-500 text-white text-xs px-2 py-1 rounded-full">x3</span>
               </div>
             </div>
