@@ -1,11 +1,14 @@
 import { Shield, CheckCircle, Clock, AlertTriangle } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export const CoverSection = () => {
+  const { t } = useLanguage();
+  
   const coverageItems = [
-    { type: "Phone Insurance", status: "Covered", provider: "Mobile provider", color: "green", icon: CheckCircle },
-    { type: "Travel Protection", status: "Covered", provider: "Credit Card", color: "green", icon: CheckCircle },
-    { type: "Rental Car Coverage", status: "Covered", provider: "Employer", color: "green", icon: CheckCircle },
-    { type: "Purchase Protection", status: "Missing", provider: "Multiple", color: "gray", icon: AlertTriangle }
+    { type: t('cover.phone_insurance'), status: t('app.cover.covered'), provider: t('cover.mobile_provider'), color: "green", icon: CheckCircle },
+    { type: t('cover.travel_protection'), status: t('app.cover.covered'), provider: t('cover.credit_card'), color: "green", icon: CheckCircle },
+    { type: t('cover.rental_coverage'), status: t('app.cover.covered'), provider: t('cover.employer'), color: "green", icon: CheckCircle },
+    { type: t('cover.purchase_protection'), status: t('app.cover.missing'), provider: t('cover.multiple'), color: "gray", icon: AlertTriangle }
   ];
 
   return (
@@ -15,15 +18,15 @@ export const CoverSection = () => {
           <div className="mb-8">
             <Shield className="h-16 w-16 text-primary mx-auto mb-6" />
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Your Complete Coverage
+              {t('cover.title')}
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              See all your insurance coverage in one place — from credit cards, employers, and policies you've purchased.
+              {t('cover.subtitle')}
             </p>
           </div>
 
           <div className="bg-card rounded-3xl p-8 md:p-12 shadow-soft border">
-            <h3 className="text-2xl font-bold text-foreground mb-8">Coverage Overview</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-8">{t('cover.overview')}</h3>
             
             <div className="grid gap-4">
               {coverageItems.map((item, index) => (
@@ -51,10 +54,9 @@ export const CoverSection = () => {
             </div>
 
             <div className="mt-8 p-6 bg-primary/5 rounded-xl border border-primary/20">
-              <h4 className="font-semibold text-primary mb-2">Coverage Gap Detected</h4>
+              <h4 className="font-semibold text-primary mb-2">{t('cover.gap_detected')}</h4>
               <p className="text-sm text-muted-foreground">
-                You're missing home contents insurance while traveling. 
-                Consider adding this to your travel policy for complete protection.
+                {t('cover.gap_message')}
               </p>
             </div>
           </div>

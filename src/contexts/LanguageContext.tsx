@@ -112,6 +112,25 @@ const translations = {
     'insurance.renters': 'Renters',
     'insurance.liability': 'Liability',
 
+    // Cover Section
+    'cover.title': 'Your Complete Coverage',
+    'cover.subtitle': 'See all your insurance coverage in one place — from credit cards, employers, and policies you\'ve purchased.',
+    'cover.overview': 'Coverage Overview',
+    'cover.gap_detected': 'Coverage Gap Detected',
+    'cover.gap_message': 'You\'re missing home contents insurance while traveling. Consider adding this to your travel policy for complete protection.',
+    'cover.phone_insurance': 'Phone Insurance',
+    'cover.travel_protection': 'Travel Protection', 
+    'cover.rental_coverage': 'Rental Car Coverage',
+    'cover.purchase_protection': 'Purchase Protection',
+    'cover.mobile_provider': 'Mobile provider',
+    'cover.credit_card': 'Credit Card',
+    'cover.employer': 'Employer',
+    'cover.multiple': 'Multiple',
+
+    // App Header
+    'app.header.title': 'CoverCheck',
+    'app.header.subtitle': 'Your Coverage Report',
+
     // Footer
     'footer.tagline': 'We don\'t sell insurance. We help you finally benefit from it.',
     'footer.cta': '🟢 Start My Free Scan',
@@ -231,6 +250,25 @@ const translations = {
     'insurance.disability': 'Invalidité',
     'insurance.renters': 'Locataires',
     'insurance.liability': 'Responsabilité',
+
+    // Cover Section
+    'cover.title': 'Votre Couverture Complète',
+    'cover.subtitle': 'Voir toute votre couverture d\'assurance en un seul endroit — des cartes de crédit, employeurs et polices que vous avez achetées.',
+    'cover.overview': 'Aperçu de la Couverture',
+    'cover.gap_detected': 'Lacune de Couverture Détectée',
+    'cover.gap_message': 'Il vous manque l\'assurance contenu domiciliaire en voyage. Considérez l\'ajouter à votre police voyage pour une protection complète.',
+    'cover.phone_insurance': 'Assurance Téléphone',
+    'cover.travel_protection': 'Protection Voyage',
+    'cover.rental_coverage': 'Couverture Voiture de Location',
+    'cover.purchase_protection': 'Protection d\'Achat',
+    'cover.mobile_provider': 'Fournisseur mobile',
+    'cover.credit_card': 'Carte de Crédit',
+    'cover.employer': 'Employeur',
+    'cover.multiple': 'Multiple',
+
+    // App Header
+    'app.header.title': 'CoverCheck',
+    'app.header.subtitle': 'Votre Rapport de Couverture',
 
     // Footer
     'footer.tagline': 'Nous ne vendons pas d\'assurance. Nous vous aidons à enfin en bénéficier.',

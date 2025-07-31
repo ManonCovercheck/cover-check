@@ -181,8 +181,8 @@ export const AppPreviewSection = () => {
 
                   {/* App Header */}
                   <div className="bg-gradient-primary text-primary-foreground p-4">
-                    <h3 className="text-lg font-semibold">CoverCheck</h3>
-                    <p className="text-primary-foreground/80 text-sm">Your Coverage Report</p>
+                    <h3 className="text-lg font-semibold">{t('app.header.title')}</h3>
+                    <p className="text-primary-foreground/80 text-sm">{t('app.header.subtitle')}</p>
                   </div>
 
                   {/* Tab Navigation */}
