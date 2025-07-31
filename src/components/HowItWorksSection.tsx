@@ -1,27 +1,30 @@
 
 import { FileText, Building, Package, MapPin } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export const HowItWorksSection = () => {
+  const { t } = useLanguage();
+  
   const steps = [
     {
       icon: FileText,
-      title: "Type of Insurance",
-      description: "Health, Home, Pet, Travel, Car, etc."
+      title: t('how_it_works.step1.title'),
+      description: t('how_it_works.step1.description')
     },
     {
       icon: Building,
-      title: "Provider Name",
-      description: "e.g. AXA, Aviva, Revolut, Amex, etc."
+      title: t('how_it_works.step2.title'),
+      description: t('how_it_works.step2.description')
     },
     {
       icon: Package,
-      title: "Package/Tier",
-      description: "Your specific plan or coverage level"
+      title: t('how_it_works.step3.title'),
+      description: t('how_it_works.step3.description')
     },
     {
       icon: MapPin,
-      title: "Country",
-      description: "For legal terms and regulations"
+      title: t('how_it_works.step4.title'),
+      description: t('how_it_works.step4.description')
     }
   ];
 
@@ -30,10 +33,10 @@ export const HowItWorksSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            How It Works
+            {t('how_it_works.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            You only need to share these 4 simple details:
+            {t('how_it_works.subtitle')}
           </p>
         </div>
 

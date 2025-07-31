@@ -131,6 +131,18 @@ const translations = {
     'app.header.title': 'CoverCheck',
     'app.header.subtitle': 'Your Coverage Report',
 
+    // How It Works
+    'how_it_works.title': 'How It Works',
+    'how_it_works.subtitle': 'You only need to share these 4 simple details:',
+    'how_it_works.step1.title': 'Type of Insurance',
+    'how_it_works.step1.description': 'Health, Home, Pet, Travel, Car, etc.',
+    'how_it_works.step2.title': 'Provider Name',
+    'how_it_works.step2.description': 'e.g. AXA, Aviva, Revolut, Amex, etc.',
+    'how_it_works.step3.title': 'Package/Tier',
+    'how_it_works.step3.description': 'Your specific plan or coverage level',
+    'how_it_works.step4.title': 'Country',
+    'how_it_works.step4.description': 'For legal terms and regulations',
+
     // Footer
     'footer.tagline': 'We don\'t sell insurance. We help you finally benefit from it.',
     'footer.cta': '🟢 Start My Free Scan',
@@ -269,6 +281,18 @@ const translations = {
     // App Header
     'app.header.title': 'CoverCheck',
     'app.header.subtitle': 'Votre Rapport de Couverture',
+
+    // How It Works
+    'how_it_works.title': 'Comment Ça Marche',
+    'how_it_works.subtitle': 'Vous n\'avez besoin de partager que ces 4 détails simples :',
+    'how_it_works.step1.title': 'Type d\'Assurance',
+    'how_it_works.step1.description': 'Santé, Maison, Animal, Voyage, Auto, etc.',
+    'how_it_works.step2.title': 'Nom du Fournisseur',
+    'how_it_works.step2.description': 'ex. AXA, Aviva, Revolut, Amex, etc.',
+    'how_it_works.step3.title': 'Package/Niveau',
+    'how_it_works.step3.description': 'Votre plan spécifique ou niveau de couverture',
+    'how_it_works.step4.title': 'Pays',
+    'how_it_works.step4.description': 'Pour les termes légaux et réglementations',
 
     // Footer
     'footer.tagline': 'Nous ne vendons pas d\'assurance. Nous vous aidons à enfin en bénéficier.',
