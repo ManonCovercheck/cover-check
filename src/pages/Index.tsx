@@ -7,6 +7,7 @@ import { CoverSection } from "@/components/CoverSection";
 import { PerksSection } from "@/components/PerksSection";
 import { InsuranceQuizSection } from "@/components/InsuranceQuizSection";
 import { AppPreviewSection } from "@/components/AppPreviewSection";
+import { CardOptimizerSection } from "@/components/CardOptimizer";
 import { FooterSection } from "@/components/FooterSection";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -52,6 +53,9 @@ const Index = () => {
           <OverlappingSection />
         </div>
         <div className="bg-white py-12">
+          <CardOptimizerSection />
+        </div>
+        <div className="bg-muted/50 py-12">
           <SmartClaimSection />
         </div>
         <div className="bg-muted/50 py-12">
