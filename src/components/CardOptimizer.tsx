@@ -21,7 +21,7 @@ const scenarios = {
     data: [true, true, true, true, true, true, true]
   },
   optionA: {
-    label: "Option A: Keep Amex, Downgrade Revolut", 
+    label: "Option A: Keep Amex, Downgrade Revolut (Metal → Plus)", 
     cost: "£144/year",
     costLabel: "Annual Savings:",
     data: [true, true, true, true, true, true, true]
