@@ -17,16 +17,19 @@ const scenarios = {
   current: {
     label: "Current: Amex Gold + Revolut Metal",
     cost: "£340/year",
+    costLabel: "Annual Cost:",
     data: [true, true, true, true, true, true, true]
   },
   optionA: {
     label: "Option A: Keep Amex, Downgrade Revolut", 
-    cost: "£196/year",
+    cost: "£144/year",
+    costLabel: "Annual Savings:",
     data: [true, true, true, true, true, true, true]
   },
   optionB: {
     label: "Option B: Keep Revolut, Cancel Amex",
-    cost: "£180/year", 
+    cost: "£160/year",
+    costLabel: "Annual Savings:",
     data: [true, true, true, true, true, false, false]
   }
 };
@@ -59,7 +62,7 @@ export const CardOptimizerSection = () => {
                     <div className="text-center mb-8">
                       <h3 className="text-2xl font-semibold text-foreground mb-2">{scenario.label}</h3>
                       <p className="text-lg text-muted-foreground">
-                        Annual Cost: <span className="font-bold text-primary text-xl">{scenario.cost}</span>
+                        {scenario.costLabel} <span className="font-bold text-primary text-xl">{scenario.cost}</span>
                       </p>
                     </div>
                     
