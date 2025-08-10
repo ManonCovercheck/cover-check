@@ -11,26 +11,23 @@ export const AddToHomeScreenBanner = () => {
     const isDismissed = localStorage.getItem('addToHomeScreenDismissed');
     if (isDismissed) return;
 
+    // Check if already installed as PWA
+    const isStandalone = window.matchMedia('(display-mode: standalone)').matches;
+    const isInWebAppiOS = (window.navigator as any).standalone === true;
+    
+    // Don't show if already installed
+    if (isStandalone || isInWebAppiOS) return;
+
+    // Always show the banner for web users
+    setIsVisible(true);
+
     // Listen for the beforeinstallprompt event
     const handleBeforeInstallPrompt = (e: Event) => {
       e.preventDefault();
       setDeferredPrompt(e);
-      setIsVisible(true);
     };
 
-    // Check if already installed
-    const isStandalone = window.matchMedia('(display-mode: standalone)').matches;
-    const isInWebAppiOS = (window.navigator as any).standalone === true;
-    
-    if (!isStandalone && !isInWebAppiOS) {
-      window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
-      
-      // Show banner for iOS devices (they don't support beforeinstallprompt)
-      const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-      if (isIOS) {
-        setIsVisible(true);
-      }
-    }
+    window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
 
     return () => {
       window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
