@@ -27,7 +27,7 @@ export const HeroSection = () => {
       
       <div className="container mx-auto px-6 relative z-10">
         {/* Top Navigation */}
-        <div className="fixed top-2 right-2 z-50 flex items-center gap-2">
+        <div className="fixed top-16 right-2 z-50 flex items-center gap-2">
           <Button 
             variant="ghost" 
             size="sm" 
