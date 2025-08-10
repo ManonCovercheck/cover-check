@@ -174,7 +174,7 @@ export const InsuranceQuizSection = () => {
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                   <p className="text-muted-foreground text-sm mt-3">
-                    29£/year for overlap report and action plan • 49£/year for overlap + smart claim, perks and cover visibility
+                    CoverCheck — All-in-one insurance scan, perks unlock, and smart claims guidance for just £49/year.
                   </p>
                 </div>
               </Card>

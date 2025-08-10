@@ -94,7 +94,7 @@ const translations = {
     'quiz.results.worth': 'unused benefits worth hundreds per year',
     'quiz.results.duplicate': 'We\'ll check for duplicate coverage costing you extra',
     'quiz.results.cta': '🟢 Start My Free Scan',
-    'quiz.results.pricing': '29£/year for overlap report and action plan • 49£/year for overlap + smart claim, perks and cover visibility',
+    'quiz.results.pricing': 'CoverCheck — All-in-one insurance scan, perks unlock, and smart claims guidance for just £49/year.',
 
     // Insurance Types
     'insurance.health': 'Health',
@@ -146,7 +146,7 @@ const translations = {
     // Footer
     'footer.tagline': 'We don\'t sell insurance. We help you finally benefit from it.',
     'footer.cta': '🟢 Start My Free Scan',
-    'footer.pricing': '29£/year for overlap report and action plan • 49£/year for overlap + smart claim, perks and cover visibility',
+    'footer.pricing': 'CoverCheck — All-in-one insurance scan, perks unlock, and smart claims guidance for just £49/year.',
     'footer.description': 'Free insurance analysis with detailed savings plans. Discover hidden opportunities in your insurance portfolio.',
     'footer.email': 'hello@covercheck.com',
     'footer.product': 'Product',
@@ -245,7 +245,7 @@ const translations = {
     'quiz.results.worth': 'avantages inutilisés valant des centaines par an',
     'quiz.results.duplicate': 'Nous vérifierons la couverture en double qui vous coûte extra',
     'quiz.results.cta': '🟢 Commencer Mon Scan Gratuit',
-    'quiz.results.pricing': '29€/an pour rapport de chevauchement et plan d\'action • 49€/an pour chevauchement + réclamation intelligente, avantages et visibilité de couverture',
+    'quiz.results.pricing': 'CoverCheck — Analyse d\'assurance tout-en-un, déblocage d\'avantages et conseils de réclamations intelligents pour seulement 49€/an.',
 
     // Insurance Types
     'insurance.health': 'Santé',
@@ -297,7 +297,7 @@ const translations = {
     // Footer
     'footer.tagline': 'Nous ne vendons pas d\'assurance. Nous vous aidons à enfin en bénéficier.',
     'footer.cta': '🟢 Commencer Mon Scan Gratuit',
-    'footer.pricing': '29€/an pour rapport de chevauchement et plan d\'action • 49€/an pour chevauchement + réclamation intelligente, avantages et visibilité de couverture',
+    'footer.pricing': 'CoverCheck — Analyse d\'assurance tout-en-un, déblocage d\'avantages et conseils de réclamations intelligents pour seulement 49€/an.',
     'footer.description': 'Analyse d\'assurance gratuite avec plans d\'économies détaillés. Découvrez les opportunités cachées dans votre portefeuille d\'assurance.',
     'footer.email': 'bonjour@covercheck.com',
     'footer.product': 'Produit',
