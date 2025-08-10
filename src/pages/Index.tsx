@@ -9,6 +9,7 @@ import { InsuranceQuizSection } from "@/components/InsuranceQuizSection";
 import { AppPreviewSection } from "@/components/AppPreviewSection";
 import { CardOptimizerSection } from "@/components/CardOptimizer";
 import { FooterSection } from "@/components/FooterSection";
+import { AddToHomeScreenBanner } from "@/components/AddToHomeScreenBanner";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Index = () => {
@@ -20,6 +21,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
+      <AddToHomeScreenBanner />
       <HeroSection />
       <div>
         <div className="bg-white py-8">
