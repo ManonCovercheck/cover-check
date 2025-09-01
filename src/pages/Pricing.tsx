@@ -115,7 +115,7 @@ export default function Pricing() {
               <div className="space-y-3 mt-6">
                 <Button onClick={handleStartScan} className="w-full">
                   <CreditCard className="h-4 w-4 mr-2" />
-                  Start Premium Trial
+                  Start Premium
                 </Button>
                 <Button onClick={handleStartScan} variant="outline" className="w-full">
                   <Users className="h-4 w-4 mr-2" />
