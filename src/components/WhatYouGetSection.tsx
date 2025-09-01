@@ -50,6 +50,12 @@ export const WhatYouGetSection = () => {
             </div>
           ))}
         </div>
+        
+        <div className="text-center mt-8">
+          <p className="text-sm text-muted-foreground">
+            CoverCheck - All-in-one insurance scan, overlap detection, perks unlock, and smart claims guidance.
+          </p>
+        </div>
       </div>
     </section>
   );

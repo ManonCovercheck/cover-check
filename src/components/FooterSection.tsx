@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Mail, Phone, MapPin } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Link } from "react-router-dom";
 
 export const FooterSection = () => {
   const { t } = useLanguage();
@@ -67,7 +68,7 @@ export const FooterSection = () => {
               <h3 className="font-semibold mb-4">{t('footer.product')}</h3>
               <ul className="space-y-2 text-primary-foreground/80">
                 <li><button onClick={() => handleFooterLink('how-it-works')} className="hover:text-primary-foreground transition-colors">{t('footer.how')}</button></li>
-                <li><button onClick={() => handleFooterLink('pricing')} className="hover:text-primary-foreground transition-colors">{t('footer.pricing_link')}</button></li>
+                <li><Link to="/pricing" className="hover:text-primary-foreground transition-colors">{t('footer.pricing_link')}</Link></li>
                 <li><button onClick={() => handleFooterLink('security')} className="hover:text-primary-foreground transition-colors">{t('footer.security')}</button></li>
               </ul>
             </div>
