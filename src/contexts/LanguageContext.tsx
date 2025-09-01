@@ -94,7 +94,7 @@ const translations = {
     'quiz.results.worth': 'unused benefits worth hundreds per year',
     'quiz.results.duplicate': 'We\'ll check for duplicate coverage costing you extra',
     'quiz.results.cta': '🟢 Start My Free Scan',
-    'quiz.results.pricing': 'CoverCheck — 100% free for you. We get paid by insurers and brokers when we help you save.',
+    'quiz.results.pricing': 'CoverCheck — 100% free for you.',
 
     // Insurance Types
     'insurance.health': 'Health',
@@ -146,7 +146,7 @@ const translations = {
     // Footer
     'footer.tagline': 'We don\'t sell insurance. We help you finally benefit from it.',
     'footer.cta': '🟢 Start My Free Scan',
-    'footer.pricing': 'CoverCheck — 100% free for you. We get paid by insurers and brokers when we help you save.',
+    'footer.pricing': 'CoverCheck — 100% free for you.',
     'footer.description': 'Free insurance analysis with detailed savings plans. Discover hidden opportunities in your insurance portfolio.',
     'footer.email': 'hello@covercheck.com',
     'footer.product': 'Product',
@@ -245,7 +245,7 @@ const translations = {
     'quiz.results.worth': 'avantages inutilisés valant des centaines par an',
     'quiz.results.duplicate': 'Nous vérifierons la couverture en double qui vous coûte extra',
     'quiz.results.cta': '🟢 Commencer Mon Scan Gratuit',
-    'quiz.results.pricing': 'CoverCheck — 100% gratuit pour vous. Nous sommes payés par les assureurs et courtiers quand nous vous aidons à économiser.',
+    'quiz.results.pricing': 'CoverCheck — 100% gratuit pour vous.',
 
     // Insurance Types
     'insurance.health': 'Santé',
@@ -297,7 +297,7 @@ const translations = {
     // Footer
     'footer.tagline': 'Nous ne vendons pas d\'assurance. Nous vous aidons à enfin en bénéficier.',
     'footer.cta': '🟢 Commencer Mon Scan Gratuit',
-    'footer.pricing': 'CoverCheck — 100% gratuit pour vous. Nous sommes payés par les assureurs et courtiers quand nous vous aidons à économiser.',
+    'footer.pricing': 'CoverCheck — 100% gratuit pour vous.',
     'footer.description': 'Analyse d\'assurance gratuite avec plans d\'économies détaillés. Découvrez les opportunités cachées dans votre portefeuille d\'assurance.',
     'footer.email': 'bonjour@covercheck.com',
     'footer.product': 'Produit',
