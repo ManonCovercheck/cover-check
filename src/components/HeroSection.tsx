@@ -16,13 +16,11 @@ export const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center bg-gradient-hero overflow-hidden">
       {/* Background Image Overlay */}
-      <div 
-        className="absolute inset-0 opacity-10"
-        style={{
-          backgroundImage: `url(${heroImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
+      <img 
+        src={heroImage}
+        alt=""
+        className="absolute inset-0 opacity-10 w-full h-full object-cover object-center"
+        fetchPriority="high"
       />
       
       <div className="container mx-auto px-6 relative z-10">
